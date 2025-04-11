@@ -1,0 +1,2534 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_c8b9e7b349d9d4eb6a762f93fbfc2d76 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_c8b9e7b349d9d4eb6a762f93fbfc2d76" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_c8b9e7b349d9d4eb6a762f93fbfc2d76 = L.map(
+                "map_c8b9e7b349d9d4eb6a762f93fbfc2d76",
+                {
+                    center: [30.357223032575792, -81.60120952182936],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 15,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_7c51bd631d464c3ca158f159a7432440 = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_c8b9e7b349d9d4eb6a762f93fbfc2d76);
+        
+    
+            var marker_cluster_8d3d6e39f600a6b632604c128cf54a8a = L.markerClusterGroup(
+                {}
+            );
+            map_c8b9e7b349d9d4eb6a762f93fbfc2d76.addLayer(marker_cluster_8d3d6e39f600a6b632604c128cf54a8a);
+        
+    
+            var circle_marker_a3258f0b2927235bb036cc684c745028 = L.circleMarker(
+                [30.35728507313998, -81.60244340202186],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_8d3d6e39f600a6b632604c128cf54a8a);
+        
+    
+        var popup_5f0dfcda7549bf953354cfd691418d40 = L.popup({"maxWidth": 250});
+
+        
+            var html_f1b6a589e3697bc1c24c80d9ff2bcf06 = $(`<div id="html_f1b6a589e3697bc1c24c80d9ff2bcf06" style="width: 100.0%; height: 100.0%;"><strong>THEFT</strong><br>Address: 3200 BOURBON ALY W<br>Date: 9/26/24, 12:01 AM</div>`)[0];
+            popup_5f0dfcda7549bf953354cfd691418d40.setContent(html_f1b6a589e3697bc1c24c80d9ff2bcf06);
+        
+
+        circle_marker_a3258f0b2927235bb036cc684c745028.bindPopup(popup_5f0dfcda7549bf953354cfd691418d40)
+        ;
+
+        
+    
+    
+            var circle_marker_a59c03e1998de592ecd7c8d2fa222b26 = L.circleMarker(
+                [30.353923881123762, -81.59948750456262],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_8d3d6e39f600a6b632604c128cf54a8a);
+        
+    
+        var popup_b32f903d84a1f85fc1804a2e54a22f75 = L.popup({"maxWidth": 250});
+
+        
+            var html_cb375788cf95baa0daed2d78d0d1df60 = $(`<div id="html_cb375788cf95baa0daed2d78d0d1df60" style="width: 100.0%; height: 100.0%;"><strong>THEFT</strong><br>Address: 2900 JUSTINA RD<br>Date: 10/3/24, 4:45 PM</div>`)[0];
+            popup_b32f903d84a1f85fc1804a2e54a22f75.setContent(html_cb375788cf95baa0daed2d78d0d1df60);
+        
+
+        circle_marker_a59c03e1998de592ecd7c8d2fa222b26.bindPopup(popup_b32f903d84a1f85fc1804a2e54a22f75)
+        ;
+
+        
+    
+    
+            var circle_marker_d48c665d22508600bc4c8b3cebf4ee78 = L.circleMarker(
+                [30.36016492220709, -81.5993442412411],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_8d3d6e39f600a6b632604c128cf54a8a);
+        
+    
+        var popup_f28f1605f96df951cf927b8778c3932a = L.popup({"maxWidth": 250});
+
+        
+            var html_b4e1527b52f580f7415722370e945cb7 = $(`<div id="html_b4e1527b52f580f7415722370e945cb7" style="width: 100.0%; height: 100.0%;"><strong>THEFT</strong><br>Address: 3300 CESERY BLVD<br>Date: 10/3/24, 5:45 PM</div>`)[0];
+            popup_f28f1605f96df951cf927b8778c3932a.setContent(html_b4e1527b52f580f7415722370e945cb7);
+        
+
+        circle_marker_d48c665d22508600bc4c8b3cebf4ee78.bindPopup(popup_f28f1605f96df951cf927b8778c3932a)
+        ;
+
+        
+    
+    
+            var circle_marker_ea7d4f41a618f231a0efd52c92cbdfe2 = L.circleMarker(
+                [30.35724346319231, -81.60071235745251],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_8d3d6e39f600a6b632604c128cf54a8a);
+        
+    
+        var popup_8801778a4d6f116d9f59f1c8ccf72b77 = L.popup({"maxWidth": 250});
+
+        
+            var html_225eac97cf0e597586f32f4ba6ed28ac = $(`<div id="html_225eac97cf0e597586f32f4ba6ed28ac" style="width: 100.0%; height: 100.0%;"><strong>AGGRAVATED ASSAULT</strong><br>Address: 3200 JUSTINA RD<br>Date: 10/3/24, 10:30 PM</div>`)[0];
+            popup_8801778a4d6f116d9f59f1c8ccf72b77.setContent(html_225eac97cf0e597586f32f4ba6ed28ac);
+        
+
+        circle_marker_ea7d4f41a618f231a0efd52c92cbdfe2.bindPopup(popup_8801778a4d6f116d9f59f1c8ccf72b77)
+        ;
+
+        
+    
+    
+            var circle_marker_9b3413eae0695cdda09021f557a2d853 = L.circleMarker(
+                [30.35724346319231, -81.60071235745251],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_8d3d6e39f600a6b632604c128cf54a8a);
+        
+    
+        var popup_33858703ea9345a572a17c89c911a229 = L.popup({"maxWidth": 250});
+
+        
+            var html_cb1b9eff30b065efe010f69c01f340e0 = $(`<div id="html_cb1b9eff30b065efe010f69c01f340e0" style="width: 100.0%; height: 100.0%;"><strong>ALL OTHER</strong><br>Address: 3200 JUSTINA RD<br>Date: 10/3/24, 10:30 PM</div>`)[0];
+            popup_33858703ea9345a572a17c89c911a229.setContent(html_cb1b9eff30b065efe010f69c01f340e0);
+        
+
+        circle_marker_9b3413eae0695cdda09021f557a2d853.bindPopup(popup_33858703ea9345a572a17c89c911a229)
+        ;
+
+        
+    
+    
+            var circle_marker_f96d4a2efce1065767fe2541b9931730 = L.circleMarker(
+                [30.35724346319231, -81.60071235745251],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_8d3d6e39f600a6b632604c128cf54a8a);
+        
+    
+        var popup_4c83c7707b8f09901a79c3d4012d886b = L.popup({"maxWidth": 250});
+
+        
+            var html_f79cc56c08278e5f95a07a1a8b1e039e = $(`<div id="html_f79cc56c08278e5f95a07a1a8b1e039e" style="width: 100.0%; height: 100.0%;"><strong>THEFT</strong><br>Address: 3200 JUSTINA RD<br>Date: 10/3/24, 9:00 PM</div>`)[0];
+            popup_4c83c7707b8f09901a79c3d4012d886b.setContent(html_f79cc56c08278e5f95a07a1a8b1e039e);
+        
+
+        circle_marker_f96d4a2efce1065767fe2541b9931730.bindPopup(popup_4c83c7707b8f09901a79c3d4012d886b)
+        ;
+
+        
+    
+    
+            var circle_marker_99b114db4a5d80decbfdf90bd25dedd1 = L.circleMarker(
+                [30.353923881123762, -81.59948750456262],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_8d3d6e39f600a6b632604c128cf54a8a);
+        
+    
+        var popup_32c0903c8be640213db3134e76046281 = L.popup({"maxWidth": 250});
+
+        
+            var html_6aca0bbbaf635877ee519f94eda9853a = $(`<div id="html_6aca0bbbaf635877ee519f94eda9853a" style="width: 100.0%; height: 100.0%;"><strong>THEFT FROM MOTOR VEHICLE</strong><br>Address: 2900 JUSTINA RD<br>Date: 10/3/24, 7:00 PM</div>`)[0];
+            popup_32c0903c8be640213db3134e76046281.setContent(html_6aca0bbbaf635877ee519f94eda9853a);
+        
+
+        circle_marker_99b114db4a5d80decbfdf90bd25dedd1.bindPopup(popup_32c0903c8be640213db3134e76046281)
+        ;
+
+        
+    
+    
+            var circle_marker_b67b38879c2ffe4c5dd10a767a5dbc66 = L.circleMarker(
+                [30.35503170777042, -81.60099920748904],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_8d3d6e39f600a6b632604c128cf54a8a);
+        
+    
+        var popup_690bc824886cb23b2c8dfc0a2f002483 = L.popup({"maxWidth": 250});
+
+        
+            var html_a0d2fc82ecbce748c9c26a9c40aa0487 = $(`<div id="html_a0d2fc82ecbce748c9c26a9c40aa0487" style="width: 100.0%; height: 100.0%;"><strong>SIMPLE ASSAULT</strong><br>Address: 3000 TALL PINE LN W<br>Date: 10/8/24, 11:40 AM</div>`)[0];
+            popup_690bc824886cb23b2c8dfc0a2f002483.setContent(html_a0d2fc82ecbce748c9c26a9c40aa0487);
+        
+
+        circle_marker_b67b38879c2ffe4c5dd10a767a5dbc66.bindPopup(popup_690bc824886cb23b2c8dfc0a2f002483)
+        ;
+
+        
+    
+    
+            var circle_marker_67a66583e153e1211f7d73c56d338e46 = L.circleMarker(
+                [30.356851617230188, -81.60358066917155],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_8d3d6e39f600a6b632604c128cf54a8a);
+        
+    
+        var popup_b7ffdb98f0159a2a0bfd35572252b69a = L.popup({"maxWidth": 250});
+
+        
+            var html_36faaa89ad2365928911876e5a92488a = $(`<div id="html_36faaa89ad2365928911876e5a92488a" style="width: 100.0%; height: 100.0%;"><strong>AGGRAVATED ASSAULT</strong><br>Address: 5600 HOLLY BELL DR<br>Date: 10/9/24, 2:00 AM</div>`)[0];
+            popup_b7ffdb98f0159a2a0bfd35572252b69a.setContent(html_36faaa89ad2365928911876e5a92488a);
+        
+
+        circle_marker_67a66583e153e1211f7d73c56d338e46.bindPopup(popup_b7ffdb98f0159a2a0bfd35572252b69a)
+        ;
+
+        
+    
+    
+            var circle_marker_35a0606957d8c0705c29518b8ea4d8b9 = L.circleMarker(
+                [30.353923881123762, -81.59948750456262],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_8d3d6e39f600a6b632604c128cf54a8a);
+        
+    
+        var popup_73c6e2a6caefed382b526dc7a306655c = L.popup({"maxWidth": 250});
+
+        
+            var html_b05a977d882e234ead53a26b891a491f = $(`<div id="html_b05a977d882e234ead53a26b891a491f" style="width: 100.0%; height: 100.0%;"><strong>DRUGS/NARCOTICS</strong><br>Address: 2900 JUSTINA RD<br>Date: 10/10/24, 3:00 PM</div>`)[0];
+            popup_73c6e2a6caefed382b526dc7a306655c.setContent(html_b05a977d882e234ead53a26b891a491f);
+        
+
+        circle_marker_35a0606957d8c0705c29518b8ea4d8b9.bindPopup(popup_73c6e2a6caefed382b526dc7a306655c)
+        ;
+
+        
+    
+    
+            var circle_marker_c130e24c6a6571979040c342a2b54069 = L.circleMarker(
+                [30.353923881123762, -81.59948750456262],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_8d3d6e39f600a6b632604c128cf54a8a);
+        
+    
+        var popup_4621619634705dd7b4de5333253c81f9 = L.popup({"maxWidth": 250});
+
+        
+            var html_cd93d5c98e6fdb707bf2da803f473de2 = $(`<div id="html_cd93d5c98e6fdb707bf2da803f473de2" style="width: 100.0%; height: 100.0%;"><strong>WEAPONS VIOLATIONS</strong><br>Address: 2900 JUSTINA RD<br>Date: 10/10/24, 3:00 PM</div>`)[0];
+            popup_4621619634705dd7b4de5333253c81f9.setContent(html_cd93d5c98e6fdb707bf2da803f473de2);
+        
+
+        circle_marker_c130e24c6a6571979040c342a2b54069.bindPopup(popup_4621619634705dd7b4de5333253c81f9)
+        ;
+
+        
+    
+    
+            var circle_marker_b36dcfb306cacd1fb01e74d63e3aa00b = L.circleMarker(
+                [30.35420692793991, -81.60046064052675],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_8d3d6e39f600a6b632604c128cf54a8a);
+        
+    
+        var popup_6bfbae4d753dd9ce861d42f304bc8467 = L.popup({"maxWidth": 250});
+
+        
+            var html_33d162fd36b7b286d189852b946654dc = $(`<div id="html_33d162fd36b7b286d189852b946654dc" style="width: 100.0%; height: 100.0%;"><strong>THEFT</strong><br>Address: 2900 TALL PINE LN W<br>Date: 10/9/24, 5:00 PM</div>`)[0];
+            popup_6bfbae4d753dd9ce861d42f304bc8467.setContent(html_33d162fd36b7b286d189852b946654dc);
+        
+
+        circle_marker_b36dcfb306cacd1fb01e74d63e3aa00b.bindPopup(popup_6bfbae4d753dd9ce861d42f304bc8467)
+        ;
+
+        
+    
+    
+            var circle_marker_d1b7b8fdf2b4ee725c6e2192b57f0015 = L.circleMarker(
+                [30.355950553924416, -81.6013347551971],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_8d3d6e39f600a6b632604c128cf54a8a);
+        
+    
+        var popup_75207e0c4b7a477cd29ee3741429c8e5 = L.popup({"maxWidth": 250});
+
+        
+            var html_e2a704f35546e5aee64f92937ed04ff4 = $(`<div id="html_e2a704f35546e5aee64f92937ed04ff4" style="width: 100.0%; height: 100.0%;"><strong>SIMPLE ASSAULT</strong><br>Address: 3100 TALL PINE LN W<br>Date: 10/12/24, 4:00 AM</div>`)[0];
+            popup_75207e0c4b7a477cd29ee3741429c8e5.setContent(html_e2a704f35546e5aee64f92937ed04ff4);
+        
+
+        circle_marker_d1b7b8fdf2b4ee725c6e2192b57f0015.bindPopup(popup_75207e0c4b7a477cd29ee3741429c8e5)
+        ;
+
+        
+    
+    
+            var circle_marker_5c1bda70eba494ae6abdd57a2f57ee52 = L.circleMarker(
+                [30.35503170777042, -81.60099920748904],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_8d3d6e39f600a6b632604c128cf54a8a);
+        
+    
+        var popup_f4bcbd728fe6f877c15c640d4371c516 = L.popup({"maxWidth": 250});
+
+        
+            var html_4390316b36be1d06ac44ed958aaee97f = $(`<div id="html_4390316b36be1d06ac44ed958aaee97f" style="width: 100.0%; height: 100.0%;"><strong>THEFT</strong><br>Address: 3000 TALL PINE LN W<br>Date: 10/15/24, 7:00 PM</div>`)[0];
+            popup_f4bcbd728fe6f877c15c640d4371c516.setContent(html_4390316b36be1d06ac44ed958aaee97f);
+        
+
+        circle_marker_5c1bda70eba494ae6abdd57a2f57ee52.bindPopup(popup_f4bcbd728fe6f877c15c640d4371c516)
+        ;
+
+        
+    
+    
+            var circle_marker_cbeddd1c17e1ff1853f565562d72337e = L.circleMarker(
+                [30.35420692793991, -81.60046064052675],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_8d3d6e39f600a6b632604c128cf54a8a);
+        
+    
+        var popup_aac0e8729aec6d1825b2496eb3a13b2d = L.popup({"maxWidth": 250});
+
+        
+            var html_e6daef0d26c7324e637eabc6cf76d125 = $(`<div id="html_e6daef0d26c7324e637eabc6cf76d125" style="width: 100.0%; height: 100.0%;"><strong>VANDALISM</strong><br>Address: 2900 TALL PINE LN W<br>Date: 10/17/24, 12:30 AM</div>`)[0];
+            popup_aac0e8729aec6d1825b2496eb3a13b2d.setContent(html_e6daef0d26c7324e637eabc6cf76d125);
+        
+
+        circle_marker_cbeddd1c17e1ff1853f565562d72337e.bindPopup(popup_aac0e8729aec6d1825b2496eb3a13b2d)
+        ;
+
+        
+    
+    
+            var circle_marker_cec8da21ceaa97347488148abc483152 = L.circleMarker(
+                [30.353923881123762, -81.59948750456262],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_8d3d6e39f600a6b632604c128cf54a8a);
+        
+    
+        var popup_fe447a2fad512dd9c545f3fca869e72d = L.popup({"maxWidth": 250});
+
+        
+            var html_caee8e9e7f31969fcce4f356f6691ba5 = $(`<div id="html_caee8e9e7f31969fcce4f356f6691ba5" style="width: 100.0%; height: 100.0%;"><strong>SIMPLE ASSAULT</strong><br>Address: 2900 JUSTINA RD<br>Date: 10/22/24, 10:30 AM</div>`)[0];
+            popup_fe447a2fad512dd9c545f3fca869e72d.setContent(html_caee8e9e7f31969fcce4f356f6691ba5);
+        
+
+        circle_marker_cec8da21ceaa97347488148abc483152.bindPopup(popup_fe447a2fad512dd9c545f3fca869e72d)
+        ;
+
+        
+    
+    
+            var circle_marker_5efb22103a5a2137f0a6845b09704bbb = L.circleMarker(
+                [30.353923881123762, -81.59948750456262],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_8d3d6e39f600a6b632604c128cf54a8a);
+        
+    
+        var popup_75b50c48bface5df9946a84164b41b32 = L.popup({"maxWidth": 250});
+
+        
+            var html_b3a8bb15b6ff6ee3549967fbe07b44a6 = $(`<div id="html_b3a8bb15b6ff6ee3549967fbe07b44a6" style="width: 100.0%; height: 100.0%;"><strong>MOTOR VEHICLE THEFT</strong><br>Address: 2900 JUSTINA RD<br>Date: 7/1/24, 5:00 PM</div>`)[0];
+            popup_75b50c48bface5df9946a84164b41b32.setContent(html_b3a8bb15b6ff6ee3549967fbe07b44a6);
+        
+
+        circle_marker_5efb22103a5a2137f0a6845b09704bbb.bindPopup(popup_75b50c48bface5df9946a84164b41b32)
+        ;
+
+        
+    
+    
+            var circle_marker_8c775a7d6baef6f09a54d48b9969eeae = L.circleMarker(
+                [30.353923881123762, -81.59948750456262],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_8d3d6e39f600a6b632604c128cf54a8a);
+        
+    
+        var popup_6fc3c79690011898feb26ee3d7c64034 = L.popup({"maxWidth": 250});
+
+        
+            var html_2087613f26d02deea51df6761468284c = $(`<div id="html_2087613f26d02deea51df6761468284c" style="width: 100.0%; height: 100.0%;"><strong>VANDALISM</strong><br>Address: 2900 JUSTINA RD<br>Date: 10/22/24, 11:45 PM</div>`)[0];
+            popup_6fc3c79690011898feb26ee3d7c64034.setContent(html_2087613f26d02deea51df6761468284c);
+        
+
+        circle_marker_8c775a7d6baef6f09a54d48b9969eeae.bindPopup(popup_6fc3c79690011898feb26ee3d7c64034)
+        ;
+
+        
+    
+    
+            var circle_marker_5ac99ed4ebad33485ba910e51866389c = L.circleMarker(
+                [30.353567649022903, -81.59695837872854],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_8d3d6e39f600a6b632604c128cf54a8a);
+        
+    
+        var popup_3747116090fc6054b8319adb07f05253 = L.popup({"maxWidth": 250});
+
+        
+            var html_12a8210abcd02a5d6251396649eb60de = $(`<div id="html_12a8210abcd02a5d6251396649eb60de" style="width: 100.0%; height: 100.0%;"><strong>AGGRAVATED ASSAULT</strong><br>Address: 2900 CESERY BLVD<br>Date: 10/24/24, 1:00 PM</div>`)[0];
+            popup_3747116090fc6054b8319adb07f05253.setContent(html_12a8210abcd02a5d6251396649eb60de);
+        
+
+        circle_marker_5ac99ed4ebad33485ba910e51866389c.bindPopup(popup_3747116090fc6054b8319adb07f05253)
+        ;
+
+        
+    
+    
+            var circle_marker_c0c772296b36a12efb9d7aac42a385f5 = L.circleMarker(
+                [30.355230398052722, -81.59996044061023],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_8d3d6e39f600a6b632604c128cf54a8a);
+        
+    
+        var popup_498cfc5ebcd6f6586cdd558fc60f56a2 = L.popup({"maxWidth": 250});
+
+        
+            var html_1c681b95b99beed5371638442b5fdc02 = $(`<div id="html_1c681b95b99beed5371638442b5fdc02" style="width: 100.0%; height: 100.0%;"><strong>THEFT</strong><br>Address: 3000 JUSTINA RD<br>Date: 10/22/24, 8:37 PM</div>`)[0];
+            popup_498cfc5ebcd6f6586cdd558fc60f56a2.setContent(html_1c681b95b99beed5371638442b5fdc02);
+        
+
+        circle_marker_c0c772296b36a12efb9d7aac42a385f5.bindPopup(popup_498cfc5ebcd6f6586cdd558fc60f56a2)
+        ;
+
+        
+    
+    
+            var circle_marker_d0df6e18f0187f8a7dce03f4a889eea2 = L.circleMarker(
+                [30.355230398052722, -81.59996044061023],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_8d3d6e39f600a6b632604c128cf54a8a);
+        
+    
+        var popup_4379c97008922ad4d87d0338919d690d = L.popup({"maxWidth": 250});
+
+        
+            var html_fabd1cf4bc9b7759530e5b4f7c96e7f9 = $(`<div id="html_fabd1cf4bc9b7759530e5b4f7c96e7f9" style="width: 100.0%; height: 100.0%;"><strong>BURGLARY</strong><br>Address: 3000 JUSTINA RD<br>Date: 10/25/24, 8:00 AM</div>`)[0];
+            popup_4379c97008922ad4d87d0338919d690d.setContent(html_fabd1cf4bc9b7759530e5b4f7c96e7f9);
+        
+
+        circle_marker_d0df6e18f0187f8a7dce03f4a889eea2.bindPopup(popup_4379c97008922ad4d87d0338919d690d)
+        ;
+
+        
+    
+    
+            var circle_marker_d51ee6fcb338afa683a4c3bc6b85d0b0 = L.circleMarker(
+                [30.353923881123762, -81.59948750456262],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_8d3d6e39f600a6b632604c128cf54a8a);
+        
+    
+        var popup_2cb497d7da4184ad7c4e748df39a5d3f = L.popup({"maxWidth": 250});
+
+        
+            var html_409e7e72e7c8f071f2eef9deea1ad091 = $(`<div id="html_409e7e72e7c8f071f2eef9deea1ad091" style="width: 100.0%; height: 100.0%;"><strong>SIMPLE ASSAULT</strong><br>Address: 2900 JUSTINA RD<br>Date: 10/25/24, 8:00 PM</div>`)[0];
+            popup_2cb497d7da4184ad7c4e748df39a5d3f.setContent(html_409e7e72e7c8f071f2eef9deea1ad091);
+        
+
+        circle_marker_d51ee6fcb338afa683a4c3bc6b85d0b0.bindPopup(popup_2cb497d7da4184ad7c4e748df39a5d3f)
+        ;
+
+        
+    
+    
+            var circle_marker_c5d76f2cc9ff7134125e94f47f165e13 = L.circleMarker(
+                [30.353923881123762, -81.59948750456262],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_8d3d6e39f600a6b632604c128cf54a8a);
+        
+    
+        var popup_0617c53c939e6ac454dcd80749318d49 = L.popup({"maxWidth": 250});
+
+        
+            var html_d38af6a0816421aff5840e5b1d31baab = $(`<div id="html_d38af6a0816421aff5840e5b1d31baab" style="width: 100.0%; height: 100.0%;"><strong>VANDALISM</strong><br>Address: 2900 JUSTINA RD<br>Date: 10/27/24, 2:30 PM</div>`)[0];
+            popup_0617c53c939e6ac454dcd80749318d49.setContent(html_d38af6a0816421aff5840e5b1d31baab);
+        
+
+        circle_marker_c5d76f2cc9ff7134125e94f47f165e13.bindPopup(popup_0617c53c939e6ac454dcd80749318d49)
+        ;
+
+        
+    
+    
+            var circle_marker_fbf426959d33d662c522914de4418413 = L.circleMarker(
+                [30.355685441618295, -81.60013107559845],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_8d3d6e39f600a6b632604c128cf54a8a);
+        
+    
+        var popup_e629cc859bb4612ca2ed9ca2a4485440 = L.popup({"maxWidth": 250});
+
+        
+            var html_130ef3c58c797e274cb0860cc44b0c1a = $(`<div id="html_130ef3c58c797e274cb0860cc44b0c1a" style="width: 100.0%; height: 100.0%;"><strong>SIMPLE ASSAULT</strong><br>Address: 3100 JUSTINA RD<br>Date: 10/28/24, 3:00 PM</div>`)[0];
+            popup_e629cc859bb4612ca2ed9ca2a4485440.setContent(html_130ef3c58c797e274cb0860cc44b0c1a);
+        
+
+        circle_marker_fbf426959d33d662c522914de4418413.bindPopup(popup_e629cc859bb4612ca2ed9ca2a4485440)
+        ;
+
+        
+    
+    
+            var circle_marker_1980723289b6c1f0c6bef7dddf7d33e0 = L.circleMarker(
+                [30.35420692793991, -81.60046064052675],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_8d3d6e39f600a6b632604c128cf54a8a);
+        
+    
+        var popup_11f541523227df91f3d39bac6a0548ee = L.popup({"maxWidth": 250});
+
+        
+            var html_70615fb5585685b0ec7c233a947425e9 = $(`<div id="html_70615fb5585685b0ec7c233a947425e9" style="width: 100.0%; height: 100.0%;"><strong>BURGLARY</strong><br>Address: 2900 TALL PINE LN W<br>Date: 10/27/24, 10:00 AM</div>`)[0];
+            popup_11f541523227df91f3d39bac6a0548ee.setContent(html_70615fb5585685b0ec7c233a947425e9);
+        
+
+        circle_marker_1980723289b6c1f0c6bef7dddf7d33e0.bindPopup(popup_11f541523227df91f3d39bac6a0548ee)
+        ;
+
+        
+    
+    
+            var circle_marker_523fc4246ee23cbdb23023f7ab7a2e2c = L.circleMarker(
+                [30.356507658727555, -81.60413800194013],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_8d3d6e39f600a6b632604c128cf54a8a);
+        
+    
+        var popup_fe635500720822b2dcba635fe54ff98a = L.popup({"maxWidth": 250});
+
+        
+            var html_43d7d214e89ea02fb0c1f6c83202ea5f = $(`<div id="html_43d7d214e89ea02fb0c1f6c83202ea5f" style="width: 100.0%; height: 100.0%;"><strong>TRESPASS</strong><br>Address: 3200 JUSTINA TER<br>Date: 10/17/24, 11:00 AM</div>`)[0];
+            popup_fe635500720822b2dcba635fe54ff98a.setContent(html_43d7d214e89ea02fb0c1f6c83202ea5f);
+        
+
+        circle_marker_523fc4246ee23cbdb23023f7ab7a2e2c.bindPopup(popup_fe635500720822b2dcba635fe54ff98a)
+        ;
+
+        
+    
+    
+            var circle_marker_f73ac77d677227017339d6ef8313cd02 = L.circleMarker(
+                [30.36412131308884, -81.60264008815332],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_8d3d6e39f600a6b632604c128cf54a8a);
+        
+    
+        var popup_5b9dfd82b6a735946f1d1a9f2db0f72b = L.popup({"maxWidth": 250});
+
+        
+            var html_b38fcc48e705bf5279decc3194f46b0f = $(`<div id="html_b38fcc48e705bf5279decc3194f46b0f" style="width: 100.0%; height: 100.0%;"><strong>MOTOR VEHICLE THEFT</strong><br>Address: 5700 TARPON CT<br>Date: 10/31/24, 10:00 PM</div>`)[0];
+            popup_5b9dfd82b6a735946f1d1a9f2db0f72b.setContent(html_b38fcc48e705bf5279decc3194f46b0f);
+        
+
+        circle_marker_f73ac77d677227017339d6ef8313cd02.bindPopup(popup_5b9dfd82b6a735946f1d1a9f2db0f72b)
+        ;
+
+        
+    
+    
+            var circle_marker_1afe87c1977f28f30d9fdc191613a254 = L.circleMarker(
+                [30.353923881123762, -81.59948750456262],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_8d3d6e39f600a6b632604c128cf54a8a);
+        
+    
+        var popup_ff2c9363abe75f6417c3b8526af7e48f = L.popup({"maxWidth": 250});
+
+        
+            var html_f0b4d1a42444448ecd71c4eed41b4832 = $(`<div id="html_f0b4d1a42444448ecd71c4eed41b4832" style="width: 100.0%; height: 100.0%;"><strong>ROBBERY</strong><br>Address: 2900 JUSTINA RD<br>Date: 11/2/24, 6:30 AM</div>`)[0];
+            popup_ff2c9363abe75f6417c3b8526af7e48f.setContent(html_f0b4d1a42444448ecd71c4eed41b4832);
+        
+
+        circle_marker_1afe87c1977f28f30d9fdc191613a254.bindPopup(popup_ff2c9363abe75f6417c3b8526af7e48f)
+        ;
+
+        
+    
+    
+            var circle_marker_94db5854d94b1027b0d6653484e93a7d = L.circleMarker(
+                [30.35424688806283, -81.60032318930513],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_8d3d6e39f600a6b632604c128cf54a8a);
+        
+    
+        var popup_a3c239260525e22b209a9d111133dd5a = L.popup({"maxWidth": 250});
+
+        
+            var html_bb3298fbc83e7d038757454300d2cbd3 = $(`<div id="html_bb3298fbc83e7d038757454300d2cbd3" style="width: 100.0%; height: 100.0%;"><strong>SIMPLE ASSAULT</strong><br>Address: 5700 TALL PINE LN<br>Date: 11/2/24, 12:00 PM</div>`)[0];
+            popup_a3c239260525e22b209a9d111133dd5a.setContent(html_bb3298fbc83e7d038757454300d2cbd3);
+        
+
+        circle_marker_94db5854d94b1027b0d6653484e93a7d.bindPopup(popup_a3c239260525e22b209a9d111133dd5a)
+        ;
+
+        
+    
+    
+            var circle_marker_4a5979d5a4602be6afefff590dee91d9 = L.circleMarker(
+                [30.357204132163652, -81.6022492311732],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_8d3d6e39f600a6b632604c128cf54a8a);
+        
+    
+        var popup_e4c0db981d9eaccb467d8392be5e4287 = L.popup({"maxWidth": 250});
+
+        
+            var html_69515da1905fc3000ec40b59a816c63a = $(`<div id="html_69515da1905fc3000ec40b59a816c63a" style="width: 100.0%; height: 100.0%;"><strong>SIMPLE ASSAULT</strong><br>Address: 5700 BOURBON ALY S<br>Date: 11/3/24, 3:00 AM</div>`)[0];
+            popup_e4c0db981d9eaccb467d8392be5e4287.setContent(html_69515da1905fc3000ec40b59a816c63a);
+        
+
+        circle_marker_4a5979d5a4602be6afefff590dee91d9.bindPopup(popup_e4c0db981d9eaccb467d8392be5e4287)
+        ;
+
+        
+    
+    
+            var circle_marker_24b7ffcbc31016696c479ad4ab3e8f5d = L.circleMarker(
+                [30.353923881123762, -81.59948750456262],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_8d3d6e39f600a6b632604c128cf54a8a);
+        
+    
+        var popup_798417d5b2035d60922f861ae45779ff = L.popup({"maxWidth": 250});
+
+        
+            var html_ade6c563e70f3f2789502037d4bd2c6b = $(`<div id="html_ade6c563e70f3f2789502037d4bd2c6b" style="width: 100.0%; height: 100.0%;"><strong>SIMPLE ASSAULT</strong><br>Address: 2900 JUSTINA RD<br>Date: 11/5/24, 3:00 PM</div>`)[0];
+            popup_798417d5b2035d60922f861ae45779ff.setContent(html_ade6c563e70f3f2789502037d4bd2c6b);
+        
+
+        circle_marker_24b7ffcbc31016696c479ad4ab3e8f5d.bindPopup(popup_798417d5b2035d60922f861ae45779ff)
+        ;
+
+        
+    
+    
+            var circle_marker_0bafb17aef40dc8f21d30a2a7d0273e7 = L.circleMarker(
+                [30.353923881123762, -81.59948750456262],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_8d3d6e39f600a6b632604c128cf54a8a);
+        
+    
+        var popup_7edb92b92f76994b962f6bb417336b2c = L.popup({"maxWidth": 250});
+
+        
+            var html_e7b75714490f895f5c092859fd9617a8 = $(`<div id="html_e7b75714490f895f5c092859fd9617a8" style="width: 100.0%; height: 100.0%;"><strong>VANDALISM</strong><br>Address: 2900 JUSTINA RD<br>Date: 11/6/24, 10:00 AM</div>`)[0];
+            popup_7edb92b92f76994b962f6bb417336b2c.setContent(html_e7b75714490f895f5c092859fd9617a8);
+        
+
+        circle_marker_0bafb17aef40dc8f21d30a2a7d0273e7.bindPopup(popup_7edb92b92f76994b962f6bb417336b2c)
+        ;
+
+        
+    
+    
+            var circle_marker_9d831e14f2dfd027f46980a4c96d2fcf = L.circleMarker(
+                [30.35420692793991, -81.60046064052675],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_8d3d6e39f600a6b632604c128cf54a8a);
+        
+    
+        var popup_940baa160acdd1bdb5f2fde9fa8bbb0e = L.popup({"maxWidth": 250});
+
+        
+            var html_ee046c2052cb77995afd18b6b6ff5cd7 = $(`<div id="html_ee046c2052cb77995afd18b6b6ff5cd7" style="width: 100.0%; height: 100.0%;"><strong>BURGLARY</strong><br>Address: 2900 TALL PINE LN W<br>Date: 11/10/24, 11:30 PM</div>`)[0];
+            popup_940baa160acdd1bdb5f2fde9fa8bbb0e.setContent(html_ee046c2052cb77995afd18b6b6ff5cd7);
+        
+
+        circle_marker_9d831e14f2dfd027f46980a4c96d2fcf.bindPopup(popup_940baa160acdd1bdb5f2fde9fa8bbb0e)
+        ;
+
+        
+    
+    
+            var circle_marker_06fc70ad79f9e6985cc8dc5d06d503e5 = L.circleMarker(
+                [30.35420692793991, -81.60046064052675],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_8d3d6e39f600a6b632604c128cf54a8a);
+        
+    
+        var popup_3a2d4c4860aefa0dc389564c11effef6 = L.popup({"maxWidth": 250});
+
+        
+            var html_9031a7e46fa96d6d3f4cea277c189a05 = $(`<div id="html_9031a7e46fa96d6d3f4cea277c189a05" style="width: 100.0%; height: 100.0%;"><strong>VANDALISM</strong><br>Address: 2900 TALL PINE LN W<br>Date: 11/10/24, 11:30 PM</div>`)[0];
+            popup_3a2d4c4860aefa0dc389564c11effef6.setContent(html_9031a7e46fa96d6d3f4cea277c189a05);
+        
+
+        circle_marker_06fc70ad79f9e6985cc8dc5d06d503e5.bindPopup(popup_3a2d4c4860aefa0dc389564c11effef6)
+        ;
+
+        
+    
+    
+            var circle_marker_bd0b5c9ab8bb584eb6c1905397693834 = L.circleMarker(
+                [30.35420692793991, -81.60046064052675],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_8d3d6e39f600a6b632604c128cf54a8a);
+        
+    
+        var popup_dfa5d8fc2b3c486cfb470f3900d62682 = L.popup({"maxWidth": 250});
+
+        
+            var html_8569a7857704f540190ab427c1635761 = $(`<div id="html_8569a7857704f540190ab427c1635761" style="width: 100.0%; height: 100.0%;"><strong>THEFT</strong><br>Address: 2900 TALL PINE LN<br>Date: 11/8/24, 2:00 PM</div>`)[0];
+            popup_dfa5d8fc2b3c486cfb470f3900d62682.setContent(html_8569a7857704f540190ab427c1635761);
+        
+
+        circle_marker_bd0b5c9ab8bb584eb6c1905397693834.bindPopup(popup_dfa5d8fc2b3c486cfb470f3900d62682)
+        ;
+
+        
+    
+    
+            var circle_marker_050529da9498c4e46ea7c4e0c01872c9 = L.circleMarker(
+                [30.357204132163652, -81.6022492311732],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_8d3d6e39f600a6b632604c128cf54a8a);
+        
+    
+        var popup_eec2fc2d4291e30ac81d94950dbb8398 = L.popup({"maxWidth": 250});
+
+        
+            var html_77bbcd8e169d44dcfe1089bf955b5d70 = $(`<div id="html_77bbcd8e169d44dcfe1089bf955b5d70" style="width: 100.0%; height: 100.0%;"><strong>DRUGS/NARCOTICS</strong><br>Address: 5700 BOURBON ALY S<br>Date: 11/13/24, 10:40 AM</div>`)[0];
+            popup_eec2fc2d4291e30ac81d94950dbb8398.setContent(html_77bbcd8e169d44dcfe1089bf955b5d70);
+        
+
+        circle_marker_050529da9498c4e46ea7c4e0c01872c9.bindPopup(popup_eec2fc2d4291e30ac81d94950dbb8398)
+        ;
+
+        
+    
+    
+            var circle_marker_ef88a5f74d47b48d96bbe807b4fdc647 = L.circleMarker(
+                [30.353848913966864, -81.59932101080786],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_8d3d6e39f600a6b632604c128cf54a8a);
+        
+    
+        var popup_712fa97d25113d52ac59848ecdb373b7 = L.popup({"maxWidth": 250});
+
+        
+            var html_dc117d65d249af91c02edbd6b751ec5b = $(`<div id="html_dc117d65d249af91c02edbd6b751ec5b" style="width: 100.0%; height: 100.0%;"><strong>SIMPLE ASSAULT</strong><br>Address: 5800 YELLOW PINE DR<br>Date: 11/12/24, 12:00 PM</div>`)[0];
+            popup_712fa97d25113d52ac59848ecdb373b7.setContent(html_dc117d65d249af91c02edbd6b751ec5b);
+        
+
+        circle_marker_ef88a5f74d47b48d96bbe807b4fdc647.bindPopup(popup_712fa97d25113d52ac59848ecdb373b7)
+        ;
+
+        
+    
+    
+            var circle_marker_d74c48eaabd3e6039a65ea0a43bfe3eb = L.circleMarker(
+                [30.355230398052722, -81.59996044061023],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_8d3d6e39f600a6b632604c128cf54a8a);
+        
+    
+        var popup_3abd6f6616567d9ea2301640ecc2922c = L.popup({"maxWidth": 250});
+
+        
+            var html_9bb9bd40b06b3c37e0e107983de39171 = $(`<div id="html_9bb9bd40b06b3c37e0e107983de39171" style="width: 100.0%; height: 100.0%;"><strong>INTIMIDATION</strong><br>Address: 3000 JUSTINA RD<br>Date: 11/16/24, 12:00 PM</div>`)[0];
+            popup_3abd6f6616567d9ea2301640ecc2922c.setContent(html_9bb9bd40b06b3c37e0e107983de39171);
+        
+
+        circle_marker_d74c48eaabd3e6039a65ea0a43bfe3eb.bindPopup(popup_3abd6f6616567d9ea2301640ecc2922c)
+        ;
+
+        
+    
+    
+            var circle_marker_ed626a24acd7fbf3259681e293f810b7 = L.circleMarker(
+                [30.355950553924416, -81.6013347551971],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_8d3d6e39f600a6b632604c128cf54a8a);
+        
+    
+        var popup_33e7a4c2b27e9188b0d5a92ce0f1049b = L.popup({"maxWidth": 250});
+
+        
+            var html_53d5ea6af016dc50ceb17e6109571869 = $(`<div id="html_53d5ea6af016dc50ceb17e6109571869" style="width: 100.0%; height: 100.0%;"><strong>THEFT FROM MOTOR VEHICLE</strong><br>Address: 3100 TALL PINE LN W<br>Date: 11/16/24, 5:00 PM</div>`)[0];
+            popup_33e7a4c2b27e9188b0d5a92ce0f1049b.setContent(html_53d5ea6af016dc50ceb17e6109571869);
+        
+
+        circle_marker_ed626a24acd7fbf3259681e293f810b7.bindPopup(popup_33e7a4c2b27e9188b0d5a92ce0f1049b)
+        ;
+
+        
+    
+    
+            var circle_marker_1678ceb001e053d8cc35085b13f8bf96 = L.circleMarker(
+                [30.35724346319231, -81.60071235745251],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_8d3d6e39f600a6b632604c128cf54a8a);
+        
+    
+        var popup_f49e0e2c6dd14e3f08e3ab18d6b49b31 = L.popup({"maxWidth": 250});
+
+        
+            var html_50e629a2e48391c6ae6c1101fe08827c = $(`<div id="html_50e629a2e48391c6ae6c1101fe08827c" style="width: 100.0%; height: 100.0%;"><strong>VANDALISM</strong><br>Address: 3200 JUSTINA RD<br>Date: 11/19/24, 5:30 PM</div>`)[0];
+            popup_f49e0e2c6dd14e3f08e3ab18d6b49b31.setContent(html_50e629a2e48391c6ae6c1101fe08827c);
+        
+
+        circle_marker_1678ceb001e053d8cc35085b13f8bf96.bindPopup(popup_f49e0e2c6dd14e3f08e3ab18d6b49b31)
+        ;
+
+        
+    
+    
+            var circle_marker_c610858bdff866307154fbfad5270203 = L.circleMarker(
+                [30.364956000199864, -81.60128550057009],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_8d3d6e39f600a6b632604c128cf54a8a);
+        
+    
+        var popup_c53bbd115c27fe5d6a7f270b35f7d1d8 = L.popup({"maxWidth": 250});
+
+        
+            var html_f1d2c6e92099338662dee1d9dbd19e46 = $(`<div id="html_f1d2c6e92099338662dee1d9dbd19e46" style="width: 100.0%; height: 100.0%;"><strong>COUNTERFEIT/FORGERY</strong><br>Address: 5800 FT CAROLINE RD<br>Date: 11/22/24, 1:00 PM</div>`)[0];
+            popup_c53bbd115c27fe5d6a7f270b35f7d1d8.setContent(html_f1d2c6e92099338662dee1d9dbd19e46);
+        
+
+        circle_marker_c610858bdff866307154fbfad5270203.bindPopup(popup_c53bbd115c27fe5d6a7f270b35f7d1d8)
+        ;
+
+        
+    
+    
+            var circle_marker_4dc0eb346801e7b2e7d41f5339c42032 = L.circleMarker(
+                [30.353923881123762, -81.59948750456262],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_8d3d6e39f600a6b632604c128cf54a8a);
+        
+    
+        var popup_27968ef8e27d4884a9a7ae3d5f2a4457 = L.popup({"maxWidth": 250});
+
+        
+            var html_8973395dc4fc7a39baab0ad5a138e0b0 = $(`<div id="html_8973395dc4fc7a39baab0ad5a138e0b0" style="width: 100.0%; height: 100.0%;"><strong>SIMPLE ASSAULT</strong><br>Address: 2900 JUSTINA RD<br>Date: 11/22/24, 10:00 PM</div>`)[0];
+            popup_27968ef8e27d4884a9a7ae3d5f2a4457.setContent(html_8973395dc4fc7a39baab0ad5a138e0b0);
+        
+
+        circle_marker_4dc0eb346801e7b2e7d41f5339c42032.bindPopup(popup_27968ef8e27d4884a9a7ae3d5f2a4457)
+        ;
+
+        
+    
+    
+            var circle_marker_332320b47b78ae6f5d6f574a594fa31a = L.circleMarker(
+                [30.35424688806283, -81.60032318930513],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_8d3d6e39f600a6b632604c128cf54a8a);
+        
+    
+        var popup_1179fbfc704a12fd5e2a4caef969d308 = L.popup({"maxWidth": 250});
+
+        
+            var html_6b26a4eaf173f16ed7e4d2d8a756ef60 = $(`<div id="html_6b26a4eaf173f16ed7e4d2d8a756ef60" style="width: 100.0%; height: 100.0%;"><strong>SIMPLE ASSAULT</strong><br>Address: 5700 TALL PINE LN<br>Date: 11/24/24, 12:00 AM</div>`)[0];
+            popup_1179fbfc704a12fd5e2a4caef969d308.setContent(html_6b26a4eaf173f16ed7e4d2d8a756ef60);
+        
+
+        circle_marker_332320b47b78ae6f5d6f574a594fa31a.bindPopup(popup_1179fbfc704a12fd5e2a4caef969d308)
+        ;
+
+        
+    
+    
+            var circle_marker_be0cc037b9091837aaca8cc6f384721e = L.circleMarker(
+                [30.35667261912219, -81.60233236126957],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_8d3d6e39f600a6b632604c128cf54a8a);
+        
+    
+        var popup_399d228aefdfcf136d4346e79193a177 = L.popup({"maxWidth": 250});
+
+        
+            var html_7ea39fd82271e837939c9ac5a0d34562 = $(`<div id="html_7ea39fd82271e837939c9ac5a0d34562" style="width: 100.0%; height: 100.0%;"><strong>SIMPLE ASSAULT</strong><br>Address: 5700 HOLLY BELL DR<br>Date: 11/24/24, 6:25 AM</div>`)[0];
+            popup_399d228aefdfcf136d4346e79193a177.setContent(html_7ea39fd82271e837939c9ac5a0d34562);
+        
+
+        circle_marker_be0cc037b9091837aaca8cc6f384721e.bindPopup(popup_399d228aefdfcf136d4346e79193a177)
+        ;
+
+        
+    
+    
+            var circle_marker_4ff52e4875846da48f6305d40549d296 = L.circleMarker(
+                [30.356507658727555, -81.60413800194013],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_8d3d6e39f600a6b632604c128cf54a8a);
+        
+    
+        var popup_27d5b70c8f745c81a1512201cd711efa = L.popup({"maxWidth": 250});
+
+        
+            var html_eef1ec92eb9e8767058491af8bc6c5b4 = $(`<div id="html_eef1ec92eb9e8767058491af8bc6c5b4" style="width: 100.0%; height: 100.0%;"><strong>VANDALISM</strong><br>Address: 3200 JUSTINA TER<br>Date: 11/28/24, 7:30 AM</div>`)[0];
+            popup_27d5b70c8f745c81a1512201cd711efa.setContent(html_eef1ec92eb9e8767058491af8bc6c5b4);
+        
+
+        circle_marker_4ff52e4875846da48f6305d40549d296.bindPopup(popup_27d5b70c8f745c81a1512201cd711efa)
+        ;
+
+        
+    
+    
+            var circle_marker_2c16b90c39776728db737016d525bc74 = L.circleMarker(
+                [30.35724346319231, -81.60071235745251],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_8d3d6e39f600a6b632604c128cf54a8a);
+        
+    
+        var popup_4dcc59a4951282acf453440ad17ed363 = L.popup({"maxWidth": 250});
+
+        
+            var html_1f76f328993acf70d874ffe26f065517 = $(`<div id="html_1f76f328993acf70d874ffe26f065517" style="width: 100.0%; height: 100.0%;"><strong>KIDNAPPING/ABDUCTION</strong><br>Address: 3200 JUSTINA RD<br>Date: 11/28/24, 11:00 PM</div>`)[0];
+            popup_4dcc59a4951282acf453440ad17ed363.setContent(html_1f76f328993acf70d874ffe26f065517);
+        
+
+        circle_marker_2c16b90c39776728db737016d525bc74.bindPopup(popup_4dcc59a4951282acf453440ad17ed363)
+        ;
+
+        
+    
+    
+            var circle_marker_7abf4852a8664ffdd1c7a643a522e34a = L.circleMarker(
+                [30.35724346319231, -81.60071235745251],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_8d3d6e39f600a6b632604c128cf54a8a);
+        
+    
+        var popup_2281d776d66da44addfd7f1b185e681d = L.popup({"maxWidth": 250});
+
+        
+            var html_e5b6a731260d20a89159e5094ece98cb = $(`<div id="html_e5b6a731260d20a89159e5094ece98cb" style="width: 100.0%; height: 100.0%;"><strong>AGGRAVATED ASSAULT</strong><br>Address: 3200 JUSTINA RD<br>Date: 11/28/24, 11:00 PM</div>`)[0];
+            popup_2281d776d66da44addfd7f1b185e681d.setContent(html_e5b6a731260d20a89159e5094ece98cb);
+        
+
+        circle_marker_7abf4852a8664ffdd1c7a643a522e34a.bindPopup(popup_2281d776d66da44addfd7f1b185e681d)
+        ;
+
+        
+    
+    
+            var circle_marker_ebd707be5dad74984db4619f14d56fc2 = L.circleMarker(
+                [30.359852523050748, -81.60158414548629],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_8d3d6e39f600a6b632604c128cf54a8a);
+        
+    
+        var popup_3104f3f2c1599fb8339622e66a80615c = L.popup({"maxWidth": 250});
+
+        
+            var html_5a9c816a7df9add2af9a13264aaa24fc = $(`<div id="html_5a9c816a7df9add2af9a13264aaa24fc" style="width: 100.0%; height: 100.0%;"><strong>THEFT FROM MOTOR VEHICLE</strong><br>Address: 5800 POMPANO DR<br>Date: 11/25/24, 11:00 AM</div>`)[0];
+            popup_3104f3f2c1599fb8339622e66a80615c.setContent(html_5a9c816a7df9add2af9a13264aaa24fc);
+        
+
+        circle_marker_ebd707be5dad74984db4619f14d56fc2.bindPopup(popup_3104f3f2c1599fb8339622e66a80615c)
+        ;
+
+        
+    
+    
+            var circle_marker_4c66e287896ca6ed58ed713e686edd57 = L.circleMarker(
+                [30.363939003125726, -81.60673500447707],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_8d3d6e39f600a6b632604c128cf54a8a);
+        
+    
+        var popup_24e71855e36ee9223056537dd4fabcb2 = L.popup({"maxWidth": 250});
+
+        
+            var html_eb21ae28b99a27fd456de148731cc0b7 = $(`<div id="html_eb21ae28b99a27fd456de148731cc0b7" style="width: 100.0%; height: 100.0%;"><strong>MOTOR VEHICLE THEFT</strong><br>Address: 5500 FT CAROLINE RD<br>Date: 11/27/24, 12:00 PM</div>`)[0];
+            popup_24e71855e36ee9223056537dd4fabcb2.setContent(html_eb21ae28b99a27fd456de148731cc0b7);
+        
+
+        circle_marker_4c66e287896ca6ed58ed713e686edd57.bindPopup(popup_24e71855e36ee9223056537dd4fabcb2)
+        ;
+
+        
+    
+    
+            var circle_marker_dd7732ee405c8cb5acfee2daefed95e3 = L.circleMarker(
+                [30.35482287014384, -81.59740461684594],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_8d3d6e39f600a6b632604c128cf54a8a);
+        
+    
+        var popup_57db3f8358c6b6eb7ec99c4e276db3ef = L.popup({"maxWidth": 250});
+
+        
+            var html_17e2d77844453b6ff642b7ffdcbab7fc = $(`<div id="html_17e2d77844453b6ff642b7ffdcbab7fc" style="width: 100.0%; height: 100.0%;"><strong>BURGLARY</strong><br>Address: 3000 CESERY BLVD<br>Date: 12/4/24, 2:15 PM</div>`)[0];
+            popup_57db3f8358c6b6eb7ec99c4e276db3ef.setContent(html_17e2d77844453b6ff642b7ffdcbab7fc);
+        
+
+        circle_marker_dd7732ee405c8cb5acfee2daefed95e3.bindPopup(popup_57db3f8358c6b6eb7ec99c4e276db3ef)
+        ;
+
+        
+    
+    
+            var circle_marker_f3ab160f281056c274a384f5900e48c8 = L.circleMarker(
+                [30.364834574979117, -81.60296361640289],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_8d3d6e39f600a6b632604c128cf54a8a);
+        
+    
+        var popup_64258b726be1ff7fa1f0761274f14eec = L.popup({"maxWidth": 250});
+
+        
+            var html_61e2653df7e3dbf798be4707f1b394c7 = $(`<div id="html_61e2653df7e3dbf798be4707f1b394c7" style="width: 100.0%; height: 100.0%;"><strong>THEFT</strong><br>Address: 5700 FT CAROLINE RD<br>Date: 12/5/24, 3:10 PM</div>`)[0];
+            popup_64258b726be1ff7fa1f0761274f14eec.setContent(html_61e2653df7e3dbf798be4707f1b394c7);
+        
+
+        circle_marker_f3ab160f281056c274a384f5900e48c8.bindPopup(popup_64258b726be1ff7fa1f0761274f14eec)
+        ;
+
+        
+    
+    
+            var circle_marker_e370ebc589753fac99cb2e173e8855f3 = L.circleMarker(
+                [30.363939003125726, -81.60673500447707],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_8d3d6e39f600a6b632604c128cf54a8a);
+        
+    
+        var popup_e5f40d49b40044225d5d447e4850f90c = L.popup({"maxWidth": 250});
+
+        
+            var html_c56f7435e047e9fa1417ba3c9cd3af7e = $(`<div id="html_c56f7435e047e9fa1417ba3c9cd3af7e" style="width: 100.0%; height: 100.0%;"><strong>THEFT</strong><br>Address: 5500 FT CAROLINE RD<br>Date: 12/4/24, 12:00 PM</div>`)[0];
+            popup_e5f40d49b40044225d5d447e4850f90c.setContent(html_c56f7435e047e9fa1417ba3c9cd3af7e);
+        
+
+        circle_marker_e370ebc589753fac99cb2e173e8855f3.bindPopup(popup_e5f40d49b40044225d5d447e4850f90c)
+        ;
+
+        
+    
+    
+            var circle_marker_f7be0d59d94499a6b96dd364eb0b4adc = L.circleMarker(
+                [30.363939003125726, -81.60673500447707],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_8d3d6e39f600a6b632604c128cf54a8a);
+        
+    
+        var popup_798842b937d26a8a8e9a58e50ecc981f = L.popup({"maxWidth": 250});
+
+        
+            var html_ef7d79423580337d08095c23c9814515 = $(`<div id="html_ef7d79423580337d08095c23c9814515" style="width: 100.0%; height: 100.0%;"><strong>VANDALISM</strong><br>Address: 5500 FT CAROLINE RD<br>Date: 12/4/24, 12:00 PM</div>`)[0];
+            popup_798842b937d26a8a8e9a58e50ecc981f.setContent(html_ef7d79423580337d08095c23c9814515);
+        
+
+        circle_marker_f7be0d59d94499a6b96dd364eb0b4adc.bindPopup(popup_798842b937d26a8a8e9a58e50ecc981f)
+        ;
+
+        
+    
+    
+            var circle_marker_81ee2894a14d001eaa6ed61777dc0948 = L.circleMarker(
+                [30.35420692793991, -81.60046064052675],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_8d3d6e39f600a6b632604c128cf54a8a);
+        
+    
+        var popup_fe22a2dde9a412d08918051abe43d773 = L.popup({"maxWidth": 250});
+
+        
+            var html_8c15f244e4a6491100b482f9695eb46f = $(`<div id="html_8c15f244e4a6491100b482f9695eb46f" style="width: 100.0%; height: 100.0%;"><strong>VANDALISM</strong><br>Address: 2900 TALL PINE LN W<br>Date: 12/9/24, 12:45 AM</div>`)[0];
+            popup_fe22a2dde9a412d08918051abe43d773.setContent(html_8c15f244e4a6491100b482f9695eb46f);
+        
+
+        circle_marker_81ee2894a14d001eaa6ed61777dc0948.bindPopup(popup_fe22a2dde9a412d08918051abe43d773)
+        ;
+
+        
+    
+    
+            var circle_marker_445cf34fe405e5563217240ccf51c2db = L.circleMarker(
+                [30.364834574979117, -81.60296361640289],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_8d3d6e39f600a6b632604c128cf54a8a);
+        
+    
+        var popup_318e2c991774e0c10773820ed293e556 = L.popup({"maxWidth": 250});
+
+        
+            var html_b8ba1d48996989fd0a1ec65123defc98 = $(`<div id="html_b8ba1d48996989fd0a1ec65123defc98" style="width: 100.0%; height: 100.0%;"><strong>THEFT</strong><br>Address: 5700 FT CAROLINE RD<br>Date: 12/9/24, 10:30 AM</div>`)[0];
+            popup_318e2c991774e0c10773820ed293e556.setContent(html_b8ba1d48996989fd0a1ec65123defc98);
+        
+
+        circle_marker_445cf34fe405e5563217240ccf51c2db.bindPopup(popup_318e2c991774e0c10773820ed293e556)
+        ;
+
+        
+    
+    
+            var circle_marker_c14798dfe8d01081e35b8ed9cedd7e35 = L.circleMarker(
+                [30.35420692793991, -81.60046064052675],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_8d3d6e39f600a6b632604c128cf54a8a);
+        
+    
+        var popup_91058320ab6bd3d2c053674689fe5280 = L.popup({"maxWidth": 250});
+
+        
+            var html_73e95f58ec0e58253f25b57d43f1235a = $(`<div id="html_73e95f58ec0e58253f25b57d43f1235a" style="width: 100.0%; height: 100.0%;"><strong>THEFT</strong><br>Address: 2900 TALL PINE LN W<br>Date: 12/9/24, 8:30 AM</div>`)[0];
+            popup_91058320ab6bd3d2c053674689fe5280.setContent(html_73e95f58ec0e58253f25b57d43f1235a);
+        
+
+        circle_marker_c14798dfe8d01081e35b8ed9cedd7e35.bindPopup(popup_91058320ab6bd3d2c053674689fe5280)
+        ;
+
+        
+    
+    
+            var circle_marker_484d24d936e9e1861f95a8cdbe0add6f = L.circleMarker(
+                [30.35482287014384, -81.59740461684594],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_8d3d6e39f600a6b632604c128cf54a8a);
+        
+    
+        var popup_48b2765ce4ff01b990bbb0825c7a2c3f = L.popup({"maxWidth": 250});
+
+        
+            var html_5f32f918f2f56433b01a33f43f2b4c8e = $(`<div id="html_5f32f918f2f56433b01a33f43f2b4c8e" style="width: 100.0%; height: 100.0%;"><strong>THEFT</strong><br>Address: 3000 CESERY BLVD<br>Date: 12/3/24, 9:00 AM</div>`)[0];
+            popup_48b2765ce4ff01b990bbb0825c7a2c3f.setContent(html_5f32f918f2f56433b01a33f43f2b4c8e);
+        
+
+        circle_marker_484d24d936e9e1861f95a8cdbe0add6f.bindPopup(popup_48b2765ce4ff01b990bbb0825c7a2c3f)
+        ;
+
+        
+    
+    
+            var circle_marker_5953af2a62763192f8635f2311ec87a3 = L.circleMarker(
+                [30.355950553924416, -81.6013347551971],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_8d3d6e39f600a6b632604c128cf54a8a);
+        
+    
+        var popup_60d808a29e349f331df5320592fc9857 = L.popup({"maxWidth": 250});
+
+        
+            var html_a36d91c53d36116ac0f8cd9f059680da = $(`<div id="html_a36d91c53d36116ac0f8cd9f059680da" style="width: 100.0%; height: 100.0%;"><strong>THEFT</strong><br>Address: 3100 TALL PINE LN<br>Date: 12/12/24, 4:46 PM</div>`)[0];
+            popup_60d808a29e349f331df5320592fc9857.setContent(html_a36d91c53d36116ac0f8cd9f059680da);
+        
+
+        circle_marker_5953af2a62763192f8635f2311ec87a3.bindPopup(popup_60d808a29e349f331df5320592fc9857)
+        ;
+
+        
+    
+    
+            var circle_marker_db5b97bb403866f487fda07ae5bc0114 = L.circleMarker(
+                [30.35420692793991, -81.60046064052675],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_8d3d6e39f600a6b632604c128cf54a8a);
+        
+    
+        var popup_b7a61d3774f881c34f19cd973ed01131 = L.popup({"maxWidth": 250});
+
+        
+            var html_5fcc0b76319a2c86f20d7917dce1ac49 = $(`<div id="html_5fcc0b76319a2c86f20d7917dce1ac49" style="width: 100.0%; height: 100.0%;"><strong>SIMPLE ASSAULT</strong><br>Address: 2900 TALL PINE LN W<br>Date: 12/15/24, 10:40 PM</div>`)[0];
+            popup_b7a61d3774f881c34f19cd973ed01131.setContent(html_5fcc0b76319a2c86f20d7917dce1ac49);
+        
+
+        circle_marker_db5b97bb403866f487fda07ae5bc0114.bindPopup(popup_b7a61d3774f881c34f19cd973ed01131)
+        ;
+
+        
+    
+    
+            var circle_marker_14e156ed0852d8370009c75d9df12183 = L.circleMarker(
+                [30.35724346319231, -81.60071235745251],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_8d3d6e39f600a6b632604c128cf54a8a);
+        
+    
+        var popup_691b3412ed4330f8eb20fac3e55275ca = L.popup({"maxWidth": 250});
+
+        
+            var html_44d3025304ce5a721d2ef2a536edc98a = $(`<div id="html_44d3025304ce5a721d2ef2a536edc98a" style="width: 100.0%; height: 100.0%;"><strong>SIMPLE ASSAULT</strong><br>Address: 3200 JUSTINA RD<br>Date: 12/26/24, 3:20 PM</div>`)[0];
+            popup_691b3412ed4330f8eb20fac3e55275ca.setContent(html_44d3025304ce5a721d2ef2a536edc98a);
+        
+
+        circle_marker_14e156ed0852d8370009c75d9df12183.bindPopup(popup_691b3412ed4330f8eb20fac3e55275ca)
+        ;
+
+        
+    
+    
+            var circle_marker_b1da7cd084a923ae9933f2959babdf20 = L.circleMarker(
+                [30.35424688806283, -81.60032318930513],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_8d3d6e39f600a6b632604c128cf54a8a);
+        
+    
+        var popup_fb96072c4877efe718c12d1764810c96 = L.popup({"maxWidth": 250});
+
+        
+            var html_a0d8db4764ca83775b9fafd895bebb14 = $(`<div id="html_a0d8db4764ca83775b9fafd895bebb14" style="width: 100.0%; height: 100.0%;"><strong>VANDALISM</strong><br>Address: 5700 TALL PINE LN<br>Date: 12/25/24, 10:00 PM</div>`)[0];
+            popup_fb96072c4877efe718c12d1764810c96.setContent(html_a0d8db4764ca83775b9fafd895bebb14);
+        
+
+        circle_marker_b1da7cd084a923ae9933f2959babdf20.bindPopup(popup_fb96072c4877efe718c12d1764810c96)
+        ;
+
+        
+    
+    
+            var circle_marker_ee4bc2032e656baeba02303061f5c28e = L.circleMarker(
+                [30.35724346319231, -81.60071235745251],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_8d3d6e39f600a6b632604c128cf54a8a);
+        
+    
+        var popup_f99584f6aee30cee86e7c4b2d0290e22 = L.popup({"maxWidth": 250});
+
+        
+            var html_1681084b807842cc3b2a8b39fd3002a4 = $(`<div id="html_1681084b807842cc3b2a8b39fd3002a4" style="width: 100.0%; height: 100.0%;"><strong>THEFT</strong><br>Address: 3200 JUSTINA RD<br>Date: 12/26/24, 9:00 PM</div>`)[0];
+            popup_f99584f6aee30cee86e7c4b2d0290e22.setContent(html_1681084b807842cc3b2a8b39fd3002a4);
+        
+
+        circle_marker_ee4bc2032e656baeba02303061f5c28e.bindPopup(popup_f99584f6aee30cee86e7c4b2d0290e22)
+        ;
+
+        
+    
+    
+            var circle_marker_4ffe5a4c7322ff24a0a810b59c6a02b1 = L.circleMarker(
+                [30.355685441618295, -81.60013107559845],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_8d3d6e39f600a6b632604c128cf54a8a);
+        
+    
+        var popup_17fd53b4f17fda77efb84365856fb098 = L.popup({"maxWidth": 250});
+
+        
+            var html_18e5072fd4d02a41db8b34e20f9604ee = $(`<div id="html_18e5072fd4d02a41db8b34e20f9604ee" style="width: 100.0%; height: 100.0%;"><strong>DRUGS/NARCOTICS</strong><br>Address: 3100 JUSTINA RD<br>Date: 12/22/24, 10:00 AM</div>`)[0];
+            popup_17fd53b4f17fda77efb84365856fb098.setContent(html_18e5072fd4d02a41db8b34e20f9604ee);
+        
+
+        circle_marker_4ffe5a4c7322ff24a0a810b59c6a02b1.bindPopup(popup_17fd53b4f17fda77efb84365856fb098)
+        ;
+
+        
+    
+    
+            var circle_marker_68c2442524320188d7b6793129857822 = L.circleMarker(
+                [30.355685441618295, -81.60013107559845],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_8d3d6e39f600a6b632604c128cf54a8a);
+        
+    
+        var popup_a5ecee2965304528cdc67fda0d1c2aca = L.popup({"maxWidth": 250});
+
+        
+            var html_0e548008273bbbdc76192cb85cee71f8 = $(`<div id="html_0e548008273bbbdc76192cb85cee71f8" style="width: 100.0%; height: 100.0%;"><strong>WEAPONS VIOLATIONS</strong><br>Address: 3100 JUSTINA RD<br>Date: 12/22/24, 10:00 AM</div>`)[0];
+            popup_a5ecee2965304528cdc67fda0d1c2aca.setContent(html_0e548008273bbbdc76192cb85cee71f8);
+        
+
+        circle_marker_68c2442524320188d7b6793129857822.bindPopup(popup_a5ecee2965304528cdc67fda0d1c2aca)
+        ;
+
+        
+    
+    
+            var circle_marker_b66d5e024feb0976ce3e87c6f9665df8 = L.circleMarker(
+                [30.355685441618295, -81.60013107559845],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_8d3d6e39f600a6b632604c128cf54a8a);
+        
+    
+        var popup_6890106560f9cd707ea70d3f75b8e54e = L.popup({"maxWidth": 250});
+
+        
+            var html_163e87164511c71201b2b3b6c486c914 = $(`<div id="html_163e87164511c71201b2b3b6c486c914" style="width: 100.0%; height: 100.0%;"><strong>NON-VIOLENT FAMILY OFFENSES</strong><br>Address: 3100 JUSTINA RD<br>Date: 12/22/24, 10:00 AM</div>`)[0];
+            popup_6890106560f9cd707ea70d3f75b8e54e.setContent(html_163e87164511c71201b2b3b6c486c914);
+        
+
+        circle_marker_b66d5e024feb0976ce3e87c6f9665df8.bindPopup(popup_6890106560f9cd707ea70d3f75b8e54e)
+        ;
+
+        
+    
+    
+            var circle_marker_382e812d8292df7a62d4352669e8ead8 = L.circleMarker(
+                [30.355685441618295, -81.60013107559845],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_8d3d6e39f600a6b632604c128cf54a8a);
+        
+    
+        var popup_254628f92ebcc3f1b47f09c84e2513c7 = L.popup({"maxWidth": 250});
+
+        
+            var html_d4134f268970e17f2b9d35f7d2e81a3b = $(`<div id="html_d4134f268970e17f2b9d35f7d2e81a3b" style="width: 100.0%; height: 100.0%;"><strong>MOTOR VEHICLE THEFT</strong><br>Address: 3100 JUSTINA RD<br>Date: 12/31/24, 8:30 AM</div>`)[0];
+            popup_254628f92ebcc3f1b47f09c84e2513c7.setContent(html_d4134f268970e17f2b9d35f7d2e81a3b);
+        
+
+        circle_marker_382e812d8292df7a62d4352669e8ead8.bindPopup(popup_254628f92ebcc3f1b47f09c84e2513c7)
+        ;
+
+        
+    
+    
+            var circle_marker_8ada2462fb88a8f13032f7a5868ed0ae = L.circleMarker(
+                [30.355685441618295, -81.60013107559845],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_8d3d6e39f600a6b632604c128cf54a8a);
+        
+    
+        var popup_6f9061ac1073b2998419f825a62106ce = L.popup({"maxWidth": 250});
+
+        
+            var html_5999eba02e1e16a0140fa990c3d36141 = $(`<div id="html_5999eba02e1e16a0140fa990c3d36141" style="width: 100.0%; height: 100.0%;"><strong>BURGLARY</strong><br>Address: 3100 JUSTINA RD<br>Date: 12/31/24, 10:15 AM</div>`)[0];
+            popup_6f9061ac1073b2998419f825a62106ce.setContent(html_5999eba02e1e16a0140fa990c3d36141);
+        
+
+        circle_marker_8ada2462fb88a8f13032f7a5868ed0ae.bindPopup(popup_6f9061ac1073b2998419f825a62106ce)
+        ;
+
+        
+    
+    
+            var circle_marker_4d030a6d73137020309e6c25bc9e7349 = L.circleMarker(
+                [30.355685441618295, -81.60013107559845],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_8d3d6e39f600a6b632604c128cf54a8a);
+        
+    
+        var popup_392dc09e9399eb5d0ac5403f3424eee3 = L.popup({"maxWidth": 250});
+
+        
+            var html_e03635891c8fe09942a86e5038e2fabf = $(`<div id="html_e03635891c8fe09942a86e5038e2fabf" style="width: 100.0%; height: 100.0%;"><strong>BURGLARY</strong><br>Address: 3100 JUSTINA RD<br>Date: 12/31/24, 10:15 AM</div>`)[0];
+            popup_392dc09e9399eb5d0ac5403f3424eee3.setContent(html_e03635891c8fe09942a86e5038e2fabf);
+        
+
+        circle_marker_4d030a6d73137020309e6c25bc9e7349.bindPopup(popup_392dc09e9399eb5d0ac5403f3424eee3)
+        ;
+
+        
+    
+    
+            var circle_marker_b4c6627c266437f240d744a5fdf1e7d0 = L.circleMarker(
+                [30.356851617230188, -81.60358066917155],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_8d3d6e39f600a6b632604c128cf54a8a);
+        
+    
+        var popup_8c512ec163e0775d383a313d79b68b21 = L.popup({"maxWidth": 250});
+
+        
+            var html_ed99fc06483c4c3bda1e2dbb90334650 = $(`<div id="html_ed99fc06483c4c3bda1e2dbb90334650" style="width: 100.0%; height: 100.0%;"><strong>AGGRAVATED ASSAULT</strong><br>Address: 5600 HOLLY BELL DR<br>Date: 1/4/25, 1:00 PM</div>`)[0];
+            popup_8c512ec163e0775d383a313d79b68b21.setContent(html_ed99fc06483c4c3bda1e2dbb90334650);
+        
+
+        circle_marker_b4c6627c266437f240d744a5fdf1e7d0.bindPopup(popup_8c512ec163e0775d383a313d79b68b21)
+        ;
+
+        
+    
+    
+            var circle_marker_6a236c1307650541f51dd92ad627cc89 = L.circleMarker(
+                [30.356507658727555, -81.60413800194013],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_8d3d6e39f600a6b632604c128cf54a8a);
+        
+    
+        var popup_d2100893a31c2652d0bd3a43e9a8e631 = L.popup({"maxWidth": 250});
+
+        
+            var html_039187aeee4ef7cd86b8cb582eb14c12 = $(`<div id="html_039187aeee4ef7cd86b8cb582eb14c12" style="width: 100.0%; height: 100.0%;"><strong>BURGLARY</strong><br>Address: 3200 JUSTINA TER<br>Date: 1/4/25, 4:00 PM</div>`)[0];
+            popup_d2100893a31c2652d0bd3a43e9a8e631.setContent(html_039187aeee4ef7cd86b8cb582eb14c12);
+        
+
+        circle_marker_6a236c1307650541f51dd92ad627cc89.bindPopup(popup_d2100893a31c2652d0bd3a43e9a8e631)
+        ;
+
+        
+    
+    
+            var circle_marker_985ee029f656c7b34e35d10679eed9ea = L.circleMarker(
+                [30.363939003125726, -81.60673500447707],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_8d3d6e39f600a6b632604c128cf54a8a);
+        
+    
+        var popup_775a66b0d889f2003c6675492577bb62 = L.popup({"maxWidth": 250});
+
+        
+            var html_53f38096a833c37f1beaf61aec82508d = $(`<div id="html_53f38096a833c37f1beaf61aec82508d" style="width: 100.0%; height: 100.0%;"><strong>FRAUD</strong><br>Address: 5500 FT CAROLINE RD<br>Date: 10/11/24, 12:00 AM</div>`)[0];
+            popup_775a66b0d889f2003c6675492577bb62.setContent(html_53f38096a833c37f1beaf61aec82508d);
+        
+
+        circle_marker_985ee029f656c7b34e35d10679eed9ea.bindPopup(popup_775a66b0d889f2003c6675492577bb62)
+        ;
+
+        
+    
+    
+            var circle_marker_006535c0a10abe882849cff08a981e04 = L.circleMarker(
+                [30.35420692793991, -81.60046064052675],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_8d3d6e39f600a6b632604c128cf54a8a);
+        
+    
+        var popup_bc422fa4504c3727b8c124395f987140 = L.popup({"maxWidth": 250});
+
+        
+            var html_acf176dee6c8fb83a9569d39e050d6a8 = $(`<div id="html_acf176dee6c8fb83a9569d39e050d6a8" style="width: 100.0%; height: 100.0%;"><strong>BURGLARY</strong><br>Address: 2900 TALL PINE LN W<br>Date: 1/9/25, 1:00 PM</div>`)[0];
+            popup_bc422fa4504c3727b8c124395f987140.setContent(html_acf176dee6c8fb83a9569d39e050d6a8);
+        
+
+        circle_marker_006535c0a10abe882849cff08a981e04.bindPopup(popup_bc422fa4504c3727b8c124395f987140)
+        ;
+
+        
+    
+    
+            var circle_marker_72a71ae989e8a92fdae815264e0c850c = L.circleMarker(
+                [30.35420692793991, -81.60046064052675],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_8d3d6e39f600a6b632604c128cf54a8a);
+        
+    
+        var popup_18fe76a767d5a0e654dd4e979b83f6f0 = L.popup({"maxWidth": 250});
+
+        
+            var html_c72dd1e226f8cac691dafe98df61f09d = $(`<div id="html_c72dd1e226f8cac691dafe98df61f09d" style="width: 100.0%; height: 100.0%;"><strong>AGGRAVATED ASSAULT</strong><br>Address: 2900 TALL PINE LN W<br>Date: 1/10/25, 12:00 AM</div>`)[0];
+            popup_18fe76a767d5a0e654dd4e979b83f6f0.setContent(html_c72dd1e226f8cac691dafe98df61f09d);
+        
+
+        circle_marker_72a71ae989e8a92fdae815264e0c850c.bindPopup(popup_18fe76a767d5a0e654dd4e979b83f6f0)
+        ;
+
+        
+    
+    
+            var circle_marker_2881264a2ac91ce84bf40ab7166fa2fd = L.circleMarker(
+                [30.35420692793991, -81.60046064052675],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_8d3d6e39f600a6b632604c128cf54a8a);
+        
+    
+        var popup_9bfe8edd77582a6b2a9bb4e4093fd6ef = L.popup({"maxWidth": 250});
+
+        
+            var html_7b7730e60213ccc5dd385175f2722c87 = $(`<div id="html_7b7730e60213ccc5dd385175f2722c87" style="width: 100.0%; height: 100.0%;"><strong>SIMPLE ASSAULT</strong><br>Address: 2900 TALL PINE LN W<br>Date: 1/6/25, 8:00 AM</div>`)[0];
+            popup_9bfe8edd77582a6b2a9bb4e4093fd6ef.setContent(html_7b7730e60213ccc5dd385175f2722c87);
+        
+
+        circle_marker_2881264a2ac91ce84bf40ab7166fa2fd.bindPopup(popup_9bfe8edd77582a6b2a9bb4e4093fd6ef)
+        ;
+
+        
+    
+    
+            var circle_marker_5fbd873eb5d7009d4093a59b29d24b90 = L.circleMarker(
+                [30.35420692793991, -81.60046064052675],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_8d3d6e39f600a6b632604c128cf54a8a);
+        
+    
+        var popup_e6cb0c8d0b6c545b4c17bfdb875fcd5c = L.popup({"maxWidth": 250});
+
+        
+            var html_66444087f14bc23675d4f840f86b1c2e = $(`<div id="html_66444087f14bc23675d4f840f86b1c2e" style="width: 100.0%; height: 100.0%;"><strong>SIMPLE ASSAULT</strong><br>Address: 2900 TALL PINE LN W<br>Date: 10/27/24, 7:00 PM</div>`)[0];
+            popup_e6cb0c8d0b6c545b4c17bfdb875fcd5c.setContent(html_66444087f14bc23675d4f840f86b1c2e);
+        
+
+        circle_marker_5fbd873eb5d7009d4093a59b29d24b90.bindPopup(popup_e6cb0c8d0b6c545b4c17bfdb875fcd5c)
+        ;
+
+        
+    
+    
+            var circle_marker_34f9b999a7fd5d78331c7149bde00943 = L.circleMarker(
+                [30.35724346319231, -81.60071235745251],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_8d3d6e39f600a6b632604c128cf54a8a);
+        
+    
+        var popup_69972031a8c8073eccd47789622b073b = L.popup({"maxWidth": 250});
+
+        
+            var html_e94cdbd046d1413319121721fead5d96 = $(`<div id="html_e94cdbd046d1413319121721fead5d96" style="width: 100.0%; height: 100.0%;"><strong>WEAPONS VIOLATIONS</strong><br>Address: 3200 JUSTINA RD<br>Date: 1/14/25, 9:20 PM</div>`)[0];
+            popup_69972031a8c8073eccd47789622b073b.setContent(html_e94cdbd046d1413319121721fead5d96);
+        
+
+        circle_marker_34f9b999a7fd5d78331c7149bde00943.bindPopup(popup_69972031a8c8073eccd47789622b073b)
+        ;
+
+        
+    
+    
+            var circle_marker_b3ad4d4bac9d6901537f661d697672ca = L.circleMarker(
+                [30.35724346319231, -81.60071235745251],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_8d3d6e39f600a6b632604c128cf54a8a);
+        
+    
+        var popup_87989c0b3fd53b530aa5e9494a44d5e9 = L.popup({"maxWidth": 250});
+
+        
+            var html_7366943e5d2c4a712d05c8a51fbca1ea = $(`<div id="html_7366943e5d2c4a712d05c8a51fbca1ea" style="width: 100.0%; height: 100.0%;"><strong>DRUGS/NARCOTICS</strong><br>Address: 3200 JUSTINA RD<br>Date: 1/15/25, 6:22 AM</div>`)[0];
+            popup_87989c0b3fd53b530aa5e9494a44d5e9.setContent(html_7366943e5d2c4a712d05c8a51fbca1ea);
+        
+
+        circle_marker_b3ad4d4bac9d6901537f661d697672ca.bindPopup(popup_87989c0b3fd53b530aa5e9494a44d5e9)
+        ;
+
+        
+    
+    
+            var circle_marker_0d9e4c3bcf874a45313c1ae078b7dd2e = L.circleMarker(
+                [30.359852523050748, -81.60158414548629],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_8d3d6e39f600a6b632604c128cf54a8a);
+        
+    
+        var popup_2c5921e8ed664ec355504c53f6bd50a7 = L.popup({"maxWidth": 250});
+
+        
+            var html_01cf794b36bdc3087712f6e6ec28faac = $(`<div id="html_01cf794b36bdc3087712f6e6ec28faac" style="width: 100.0%; height: 100.0%;"><strong>THEFT</strong><br>Address: 5800 POMPANO DR<br>Date: 1/15/25, 3:30 PM</div>`)[0];
+            popup_2c5921e8ed664ec355504c53f6bd50a7.setContent(html_01cf794b36bdc3087712f6e6ec28faac);
+        
+
+        circle_marker_0d9e4c3bcf874a45313c1ae078b7dd2e.bindPopup(popup_2c5921e8ed664ec355504c53f6bd50a7)
+        ;
+
+        
+    
+    
+            var circle_marker_fba5077211d1f8e45ac1c83ae3019581 = L.circleMarker(
+                [30.359852523050748, -81.60158414548629],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_8d3d6e39f600a6b632604c128cf54a8a);
+        
+    
+        var popup_8661a1e11fa299b8e83e3a0069d81ad3 = L.popup({"maxWidth": 250});
+
+        
+            var html_78edcdc9951906e9c17147934a2886c9 = $(`<div id="html_78edcdc9951906e9c17147934a2886c9" style="width: 100.0%; height: 100.0%;"><strong>VANDALISM</strong><br>Address: 5800 POMPANO DR<br>Date: 1/15/25, 3:30 PM</div>`)[0];
+            popup_8661a1e11fa299b8e83e3a0069d81ad3.setContent(html_78edcdc9951906e9c17147934a2886c9);
+        
+
+        circle_marker_fba5077211d1f8e45ac1c83ae3019581.bindPopup(popup_8661a1e11fa299b8e83e3a0069d81ad3)
+        ;
+
+        
+    
+    
+            var circle_marker_1790de606f83ba67fc9c4fc5b0591431 = L.circleMarker(
+                [30.359852523050748, -81.60158414548629],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_8d3d6e39f600a6b632604c128cf54a8a);
+        
+    
+        var popup_a8100b998ac23761604aa4d4f36ebe24 = L.popup({"maxWidth": 250});
+
+        
+            var html_620a8aa00c64ce83016deb4695138ffe = $(`<div id="html_620a8aa00c64ce83016deb4695138ffe" style="width: 100.0%; height: 100.0%;"><strong>TRESPASS</strong><br>Address: 5800 POMPANO DR<br>Date: 1/15/25, 3:30 PM</div>`)[0];
+            popup_a8100b998ac23761604aa4d4f36ebe24.setContent(html_620a8aa00c64ce83016deb4695138ffe);
+        
+
+        circle_marker_1790de606f83ba67fc9c4fc5b0591431.bindPopup(popup_a8100b998ac23761604aa4d4f36ebe24)
+        ;
+
+        
+    
+    
+            var circle_marker_7e71d8d5faa6a57b84a33d74a3b29880 = L.circleMarker(
+                [30.355950553924416, -81.6013347551971],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_8d3d6e39f600a6b632604c128cf54a8a);
+        
+    
+        var popup_ffbec1cfae48c339831da4ca507e6f43 = L.popup({"maxWidth": 250});
+
+        
+            var html_c4862cbf6564385d49cac19c2f0e4435 = $(`<div id="html_c4862cbf6564385d49cac19c2f0e4435" style="width: 100.0%; height: 100.0%;"><strong>VANDALISM</strong><br>Address: 3100 TALL PINE LN W<br>Date: 1/16/25, 4:30 AM</div>`)[0];
+            popup_ffbec1cfae48c339831da4ca507e6f43.setContent(html_c4862cbf6564385d49cac19c2f0e4435);
+        
+
+        circle_marker_7e71d8d5faa6a57b84a33d74a3b29880.bindPopup(popup_ffbec1cfae48c339831da4ca507e6f43)
+        ;
+
+        
+    
+    
+            var circle_marker_8ab14adcf636ea5f9ca52348706c5520 = L.circleMarker(
+                [30.353923881123762, -81.59948750456262],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_8d3d6e39f600a6b632604c128cf54a8a);
+        
+    
+        var popup_e304ff5f25db40bc3c74860ac52997e7 = L.popup({"maxWidth": 250});
+
+        
+            var html_08169c6299412b3deafdf12dcb637841 = $(`<div id="html_08169c6299412b3deafdf12dcb637841" style="width: 100.0%; height: 100.0%;"><strong>SIMPLE ASSAULT</strong><br>Address: 2900 JUSTINA RD<br>Date: 1/27/25, 3:30 PM</div>`)[0];
+            popup_e304ff5f25db40bc3c74860ac52997e7.setContent(html_08169c6299412b3deafdf12dcb637841);
+        
+
+        circle_marker_8ab14adcf636ea5f9ca52348706c5520.bindPopup(popup_e304ff5f25db40bc3c74860ac52997e7)
+        ;
+
+        
+    
+    
+            var circle_marker_3516e3adbe4d3c888b35646af23e5fc2 = L.circleMarker(
+                [30.361356987541416, -81.60159863531183],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_8d3d6e39f600a6b632604c128cf54a8a);
+        
+    
+        var popup_2780c789a27943e7aabbc1719a7c70d6 = L.popup({"maxWidth": 250});
+
+        
+            var html_07bef1a2d53f40599223d05aa4477dc3 = $(`<div id="html_07bef1a2d53f40599223d05aa4477dc3" style="width: 100.0%; height: 100.0%;"><strong>COUNTERFEIT/FORGERY</strong><br>Address: 5800 JACK RD<br>Date: 1/2/25, 11:00 PM</div>`)[0];
+            popup_2780c789a27943e7aabbc1719a7c70d6.setContent(html_07bef1a2d53f40599223d05aa4477dc3);
+        
+
+        circle_marker_3516e3adbe4d3c888b35646af23e5fc2.bindPopup(popup_2780c789a27943e7aabbc1719a7c70d6)
+        ;
+
+        
+    
+    
+            var circle_marker_3b0786eb8273f9a67f96cb53c3bcc7d0 = L.circleMarker(
+                [30.353923881123762, -81.59948750456262],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_8d3d6e39f600a6b632604c128cf54a8a);
+        
+    
+        var popup_1b609fb7069c60a0082977495d9c7193 = L.popup({"maxWidth": 250});
+
+        
+            var html_4b1e3093bfa7bb5e543f532689a5a846 = $(`<div id="html_4b1e3093bfa7bb5e543f532689a5a846" style="width: 100.0%; height: 100.0%;"><strong>AGGRAVATED ASSAULT</strong><br>Address: 2900 JUSTINA RD<br>Date: 2/3/25, 2:15 AM</div>`)[0];
+            popup_1b609fb7069c60a0082977495d9c7193.setContent(html_4b1e3093bfa7bb5e543f532689a5a846);
+        
+
+        circle_marker_3b0786eb8273f9a67f96cb53c3bcc7d0.bindPopup(popup_1b609fb7069c60a0082977495d9c7193)
+        ;
+
+        
+    
+    
+            var circle_marker_3aa7bc05d99c396acf074be6f77475ac = L.circleMarker(
+                [30.35724346319231, -81.60071235745251],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_8d3d6e39f600a6b632604c128cf54a8a);
+        
+    
+        var popup_1ccc0f5b5a197eca2a87a45679652e6d = L.popup({"maxWidth": 250});
+
+        
+            var html_e017dc674cf6ff7e912a113b107d53c2 = $(`<div id="html_e017dc674cf6ff7e912a113b107d53c2" style="width: 100.0%; height: 100.0%;"><strong>THEFT</strong><br>Address: 3200 JUSTINA RD<br>Date: 2/5/25, 12:00 AM</div>`)[0];
+            popup_1ccc0f5b5a197eca2a87a45679652e6d.setContent(html_e017dc674cf6ff7e912a113b107d53c2);
+        
+
+        circle_marker_3aa7bc05d99c396acf074be6f77475ac.bindPopup(popup_1ccc0f5b5a197eca2a87a45679652e6d)
+        ;
+
+        
+    
+    
+            var circle_marker_683c99f9d1eadbf5d5070276e7e96a0d = L.circleMarker(
+                [30.355950553924416, -81.6013347551971],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_8d3d6e39f600a6b632604c128cf54a8a);
+        
+    
+        var popup_b8e98ccfde48a5ed3a00047181116885 = L.popup({"maxWidth": 250});
+
+        
+            var html_b1aa321a4af2c96b65a01c65bee4c84b = $(`<div id="html_b1aa321a4af2c96b65a01c65bee4c84b" style="width: 100.0%; height: 100.0%;"><strong>VANDALISM</strong><br>Address: 3100 TALL PINE LN W<br>Date: 2/8/25, 12:00 PM</div>`)[0];
+            popup_b8e98ccfde48a5ed3a00047181116885.setContent(html_b1aa321a4af2c96b65a01c65bee4c84b);
+        
+
+        circle_marker_683c99f9d1eadbf5d5070276e7e96a0d.bindPopup(popup_b8e98ccfde48a5ed3a00047181116885)
+        ;
+
+        
+    
+    
+            var circle_marker_03410b7190725a3f8608d8763f625a2e = L.circleMarker(
+                [30.35937765550905, -81.60162523442739],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_8d3d6e39f600a6b632604c128cf54a8a);
+        
+    
+        var popup_6c2b58af11dd1e6a8e0ab6b42153a854 = L.popup({"maxWidth": 250});
+
+        
+            var html_0b545bf3b3bf8315a5b472b3455679a7 = $(`<div id="html_0b545bf3b3bf8315a5b472b3455679a7" style="width: 100.0%; height: 100.0%;"><strong>THEFT FROM MOTOR VEHICLE</strong><br>Address: 5700 JUSTINA TER<br>Date: 2/9/25, 3:30 PM</div>`)[0];
+            popup_6c2b58af11dd1e6a8e0ab6b42153a854.setContent(html_0b545bf3b3bf8315a5b472b3455679a7);
+        
+
+        circle_marker_03410b7190725a3f8608d8763f625a2e.bindPopup(popup_6c2b58af11dd1e6a8e0ab6b42153a854)
+        ;
+
+        
+    
+    
+            var circle_marker_5989f4b23d7395bff0a4d516ff618d3a = L.circleMarker(
+                [30.35937765550905, -81.60162523442739],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_8d3d6e39f600a6b632604c128cf54a8a);
+        
+    
+        var popup_ea207a990822d62985271d304ac66bc8 = L.popup({"maxWidth": 250});
+
+        
+            var html_1d867dc35ea5413e849bb9b9dfa0bfec = $(`<div id="html_1d867dc35ea5413e849bb9b9dfa0bfec" style="width: 100.0%; height: 100.0%;"><strong>TRESPASS</strong><br>Address: 5700 JUSTINA TER<br>Date: 2/9/25, 3:30 PM</div>`)[0];
+            popup_ea207a990822d62985271d304ac66bc8.setContent(html_1d867dc35ea5413e849bb9b9dfa0bfec);
+        
+
+        circle_marker_5989f4b23d7395bff0a4d516ff618d3a.bindPopup(popup_ea207a990822d62985271d304ac66bc8)
+        ;
+
+        
+    
+    
+            var circle_marker_f066c60a85b2f136ac5dd8dde877b2c6 = L.circleMarker(
+                [30.353923881123762, -81.59948750456262],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_8d3d6e39f600a6b632604c128cf54a8a);
+        
+    
+        var popup_c0b8c75eefd8ce382cec421e5ee4812a = L.popup({"maxWidth": 250});
+
+        
+            var html_43b105c5cf0fc2bbab1b6180e642f0ca = $(`<div id="html_43b105c5cf0fc2bbab1b6180e642f0ca" style="width: 100.0%; height: 100.0%;"><strong>SIMPLE ASSAULT</strong><br>Address: 2900 JUSTINA RD<br>Date: 2/10/25, 11:30 PM</div>`)[0];
+            popup_c0b8c75eefd8ce382cec421e5ee4812a.setContent(html_43b105c5cf0fc2bbab1b6180e642f0ca);
+        
+
+        circle_marker_f066c60a85b2f136ac5dd8dde877b2c6.bindPopup(popup_c0b8c75eefd8ce382cec421e5ee4812a)
+        ;
+
+        
+    
+    
+            var circle_marker_a2ce0a03a26c1d425ebc1b5d369159da = L.circleMarker(
+                [30.362759812743253, -81.60215997456656],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_8d3d6e39f600a6b632604c128cf54a8a);
+        
+    
+        var popup_f1a4fca8a1f00c37dbc3fdad69088903 = L.popup({"maxWidth": 250});
+
+        
+            var html_acce3d96dcc1d7e3e25704a64858b939 = $(`<div id="html_acce3d96dcc1d7e3e25704a64858b939" style="width: 100.0%; height: 100.0%;"><strong>WEAPONS VIOLATIONS</strong><br>Address: 5700 MORAY CT<br>Date: 2/11/25, 5:31 PM</div>`)[0];
+            popup_f1a4fca8a1f00c37dbc3fdad69088903.setContent(html_acce3d96dcc1d7e3e25704a64858b939);
+        
+
+        circle_marker_a2ce0a03a26c1d425ebc1b5d369159da.bindPopup(popup_f1a4fca8a1f00c37dbc3fdad69088903)
+        ;
+
+        
+    
+    
+            var circle_marker_7b28603a0e190309f6d0c82c5b80b4af = L.circleMarker(
+                [30.362759812743253, -81.60215997456656],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_8d3d6e39f600a6b632604c128cf54a8a);
+        
+    
+        var popup_27711e43b4799b884bc92f89b60e0613 = L.popup({"maxWidth": 250});
+
+        
+            var html_e482e7231df6b339bb8566d65f797cb9 = $(`<div id="html_e482e7231df6b339bb8566d65f797cb9" style="width: 100.0%; height: 100.0%;"><strong>TRESPASS</strong><br>Address: 5700 MORAY CT<br>Date: 2/11/25, 5:31 PM</div>`)[0];
+            popup_27711e43b4799b884bc92f89b60e0613.setContent(html_e482e7231df6b339bb8566d65f797cb9);
+        
+
+        circle_marker_7b28603a0e190309f6d0c82c5b80b4af.bindPopup(popup_27711e43b4799b884bc92f89b60e0613)
+        ;
+
+        
+    
+    
+            var circle_marker_89df41d412dfbe7e5921dec5f9cf5a70 = L.circleMarker(
+                [30.362759812743253, -81.60215997456656],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_8d3d6e39f600a6b632604c128cf54a8a);
+        
+    
+        var popup_17af21ffea7caa829452a1ead48f84b7 = L.popup({"maxWidth": 250});
+
+        
+            var html_f29efc46253ce82d65dadad6288731f8 = $(`<div id="html_f29efc46253ce82d65dadad6288731f8" style="width: 100.0%; height: 100.0%;"><strong>ALL OTHER</strong><br>Address: 5700 MORAY CT<br>Date: 2/11/25, 5:31 PM</div>`)[0];
+            popup_17af21ffea7caa829452a1ead48f84b7.setContent(html_f29efc46253ce82d65dadad6288731f8);
+        
+
+        circle_marker_89df41d412dfbe7e5921dec5f9cf5a70.bindPopup(popup_17af21ffea7caa829452a1ead48f84b7)
+        ;
+
+        
+    
+    
+            var circle_marker_3e6e09d489529cd359c9f6af2320b462 = L.circleMarker(
+                [30.35724346319231, -81.60071235745251],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_8d3d6e39f600a6b632604c128cf54a8a);
+        
+    
+        var popup_04f56fe559bae12222f68df32a61c0f0 = L.popup({"maxWidth": 250});
+
+        
+            var html_2bd54785f2f61164de2d2f19f1c78cfc = $(`<div id="html_2bd54785f2f61164de2d2f19f1c78cfc" style="width: 100.0%; height: 100.0%;"><strong>THEFT FROM MOTOR VEHICLE</strong><br>Address: 3200 JUSTINA RD<br>Date: 2/14/25, 9:00 AM</div>`)[0];
+            popup_04f56fe559bae12222f68df32a61c0f0.setContent(html_2bd54785f2f61164de2d2f19f1c78cfc);
+        
+
+        circle_marker_3e6e09d489529cd359c9f6af2320b462.bindPopup(popup_04f56fe559bae12222f68df32a61c0f0)
+        ;
+
+        
+    
+    
+            var circle_marker_d66d947e6acf2e8038c431f9f15e44b5 = L.circleMarker(
+                [30.35724346319231, -81.60071235745251],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_8d3d6e39f600a6b632604c128cf54a8a);
+        
+    
+        var popup_f40b835db4c2831a15a174b6aac9ba49 = L.popup({"maxWidth": 250});
+
+        
+            var html_183f5d771c2a883cea7a0c46400b89c7 = $(`<div id="html_183f5d771c2a883cea7a0c46400b89c7" style="width: 100.0%; height: 100.0%;"><strong>FRAUD</strong><br>Address: 3200 JUSTINA RD<br>Date: 2/14/25, 9:00 AM</div>`)[0];
+            popup_f40b835db4c2831a15a174b6aac9ba49.setContent(html_183f5d771c2a883cea7a0c46400b89c7);
+        
+
+        circle_marker_d66d947e6acf2e8038c431f9f15e44b5.bindPopup(popup_f40b835db4c2831a15a174b6aac9ba49)
+        ;
+
+        
+    
+    
+            var circle_marker_dababe29df9ab8e2d4682f2ab3da24bc = L.circleMarker(
+                [30.35724346319231, -81.60071235745251],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_8d3d6e39f600a6b632604c128cf54a8a);
+        
+    
+        var popup_bb912128223653a149e5707a17ee7c45 = L.popup({"maxWidth": 250});
+
+        
+            var html_f45cba3d82bd5366ef8fcb9c8bb35746 = $(`<div id="html_f45cba3d82bd5366ef8fcb9c8bb35746" style="width: 100.0%; height: 100.0%;"><strong>THEFT</strong><br>Address: 3200 JUSTINA RD<br>Date: 2/15/25, 11:30 PM</div>`)[0];
+            popup_bb912128223653a149e5707a17ee7c45.setContent(html_f45cba3d82bd5366ef8fcb9c8bb35746);
+        
+
+        circle_marker_dababe29df9ab8e2d4682f2ab3da24bc.bindPopup(popup_bb912128223653a149e5707a17ee7c45)
+        ;
+
+        
+    
+    
+            var circle_marker_6ac2cd3e70050cbcd1d04d86bfc89847 = L.circleMarker(
+                [30.364956000199864, -81.60128550057009],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_8d3d6e39f600a6b632604c128cf54a8a);
+        
+    
+        var popup_1eec4d0a0a198ac86069db10c8d15ed4 = L.popup({"maxWidth": 250});
+
+        
+            var html_164028cd0a1ea41f6fc639177897f5fb = $(`<div id="html_164028cd0a1ea41f6fc639177897f5fb" style="width: 100.0%; height: 100.0%;"><strong>MOTOR VEHICLE THEFT</strong><br>Address: 5800 FT CAROLINE RD<br>Date: 2/17/25, 7:42 PM</div>`)[0];
+            popup_1eec4d0a0a198ac86069db10c8d15ed4.setContent(html_164028cd0a1ea41f6fc639177897f5fb);
+        
+
+        circle_marker_6ac2cd3e70050cbcd1d04d86bfc89847.bindPopup(popup_1eec4d0a0a198ac86069db10c8d15ed4)
+        ;
+
+        
+    
+    
+            var circle_marker_9f36d309089cb52b60c167a4ef75e3a1 = L.circleMarker(
+                [30.362550425787504, -81.60378591624766],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_8d3d6e39f600a6b632604c128cf54a8a);
+        
+    
+        var popup_fab1d740f9a0309b53c055b7bc404d13 = L.popup({"maxWidth": 250});
+
+        
+            var html_25b9bb800aa55ef7e8b471d7d058975a = $(`<div id="html_25b9bb800aa55ef7e8b471d7d058975a" style="width: 100.0%; height: 100.0%;"><strong>BURGLARY</strong><br>Address: 5600 GEORGE CT<br>Date: 2/21/25, 5:17 PM</div>`)[0];
+            popup_fab1d740f9a0309b53c055b7bc404d13.setContent(html_25b9bb800aa55ef7e8b471d7d058975a);
+        
+
+        circle_marker_9f36d309089cb52b60c167a4ef75e3a1.bindPopup(popup_fab1d740f9a0309b53c055b7bc404d13)
+        ;
+
+        
+    
+    
+            var circle_marker_b8f42037eab8f85704d1a520599fcf44 = L.circleMarker(
+                [30.362550425787504, -81.60378591624766],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_8d3d6e39f600a6b632604c128cf54a8a);
+        
+    
+        var popup_fba8b518e707b63fbc926dcc5359a3d2 = L.popup({"maxWidth": 250});
+
+        
+            var html_2cb8619a96188b231ca26214121a411b = $(`<div id="html_2cb8619a96188b231ca26214121a411b" style="width: 100.0%; height: 100.0%;"><strong>VANDALISM</strong><br>Address: 5600 GEORGE CT<br>Date: 2/21/25, 5:17 PM</div>`)[0];
+            popup_fba8b518e707b63fbc926dcc5359a3d2.setContent(html_2cb8619a96188b231ca26214121a411b);
+        
+
+        circle_marker_b8f42037eab8f85704d1a520599fcf44.bindPopup(popup_fba8b518e707b63fbc926dcc5359a3d2)
+        ;
+
+        
+    
+    
+            var circle_marker_821a5fd0e8858b7b8002b05ad223a2dd = L.circleMarker(
+                [30.362550425787504, -81.60378591624766],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_8d3d6e39f600a6b632604c128cf54a8a);
+        
+    
+        var popup_f434d0788aad990390411993ffb4137c = L.popup({"maxWidth": 250});
+
+        
+            var html_a000ed1d9a22ad6ccfa0379fcf5de29c = $(`<div id="html_a000ed1d9a22ad6ccfa0379fcf5de29c" style="width: 100.0%; height: 100.0%;"><strong>DRUGS/NARCOTICS</strong><br>Address: 5600 GEORGE CT<br>Date: 2/21/25, 5:17 PM</div>`)[0];
+            popup_f434d0788aad990390411993ffb4137c.setContent(html_a000ed1d9a22ad6ccfa0379fcf5de29c);
+        
+
+        circle_marker_821a5fd0e8858b7b8002b05ad223a2dd.bindPopup(popup_f434d0788aad990390411993ffb4137c)
+        ;
+
+        
+    
+    
+            var circle_marker_9afe3ddeb226ce11328d4a994c1c9d04 = L.circleMarker(
+                [30.362550425787504, -81.60378591624766],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_8d3d6e39f600a6b632604c128cf54a8a);
+        
+    
+        var popup_d5a2f9cab2f336548eb8f64888462350 = L.popup({"maxWidth": 250});
+
+        
+            var html_7569883dbaf8eecad19651c143b60675 = $(`<div id="html_7569883dbaf8eecad19651c143b60675" style="width: 100.0%; height: 100.0%;"><strong>ALL OTHER</strong><br>Address: 5600 GEORGE CT<br>Date: 2/21/25, 5:17 PM</div>`)[0];
+            popup_d5a2f9cab2f336548eb8f64888462350.setContent(html_7569883dbaf8eecad19651c143b60675);
+        
+
+        circle_marker_9afe3ddeb226ce11328d4a994c1c9d04.bindPopup(popup_d5a2f9cab2f336548eb8f64888462350)
+        ;
+
+        
+    
+    
+            var circle_marker_4da45f0c09c2e94bc7607790fd0e7b0e = L.circleMarker(
+                [30.35871250531928, -81.59883609123433],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_8d3d6e39f600a6b632604c128cf54a8a);
+        
+    
+        var popup_189675dc0458c85494d3927ed0b48451 = L.popup({"maxWidth": 250});
+
+        
+            var html_3f0c9657d811189ee7eebd5eef7b7b14 = $(`<div id="html_3f0c9657d811189ee7eebd5eef7b7b14" style="width: 100.0%; height: 100.0%;"><strong>SIMPLE ASSAULT</strong><br>Address: 3200 CESERY BLVD<br>Date: 2/23/25, 3:00 PM</div>`)[0];
+            popup_189675dc0458c85494d3927ed0b48451.setContent(html_3f0c9657d811189ee7eebd5eef7b7b14);
+        
+
+        circle_marker_4da45f0c09c2e94bc7607790fd0e7b0e.bindPopup(popup_189675dc0458c85494d3927ed0b48451)
+        ;
+
+        
+    
+    
+            var circle_marker_0e24a988229734b609b646ac51f1f542 = L.circleMarker(
+                [30.354125635589014, -81.59827012565589],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_8d3d6e39f600a6b632604c128cf54a8a);
+        
+    
+        var popup_1987e7b016eb914a407daf1748874507 = L.popup({"maxWidth": 250});
+
+        
+            var html_6d36435ad27cf10cbd3d0f6413bb8346 = $(`<div id="html_6d36435ad27cf10cbd3d0f6413bb8346" style="width: 100.0%; height: 100.0%;"><strong>SIMPLE ASSAULT</strong><br>Address: 5800 YELLOW PINE CT<br>Date: 2/23/25, 2:00 PM</div>`)[0];
+            popup_1987e7b016eb914a407daf1748874507.setContent(html_6d36435ad27cf10cbd3d0f6413bb8346);
+        
+
+        circle_marker_0e24a988229734b609b646ac51f1f542.bindPopup(popup_1987e7b016eb914a407daf1748874507)
+        ;
+
+        
+    
+    
+            var circle_marker_46ca3473a4d4498fa49453c4ed32a5e4 = L.circleMarker(
+                [30.35724346319231, -81.60071235745251],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_8d3d6e39f600a6b632604c128cf54a8a);
+        
+    
+        var popup_d39633db00ffde0d6b66f6c382a2c627 = L.popup({"maxWidth": 250});
+
+        
+            var html_8e425131b59915bcecdad15370a158a0 = $(`<div id="html_8e425131b59915bcecdad15370a158a0" style="width: 100.0%; height: 100.0%;"><strong>INTIMIDATION</strong><br>Address: 3200 JUSTINA RD<br>Date: 2/24/25, 3:15 PM</div>`)[0];
+            popup_d39633db00ffde0d6b66f6c382a2c627.setContent(html_8e425131b59915bcecdad15370a158a0);
+        
+
+        circle_marker_46ca3473a4d4498fa49453c4ed32a5e4.bindPopup(popup_d39633db00ffde0d6b66f6c382a2c627)
+        ;
+
+        
+    
+    
+            var circle_marker_8242b24f930fd660c33458d915bdea38 = L.circleMarker(
+                [30.356507658727555, -81.60413800194013],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_8d3d6e39f600a6b632604c128cf54a8a);
+        
+    
+        var popup_9a1df5340b08babdd260e0ad2d30439e = L.popup({"maxWidth": 250});
+
+        
+            var html_22a5157892ca274fd0badfcd6fdd3d17 = $(`<div id="html_22a5157892ca274fd0badfcd6fdd3d17" style="width: 100.0%; height: 100.0%;"><strong>DRUGS/NARCOTICS</strong><br>Address: 3200 JUSTINA TER<br>Date: 2/1/25, 12:00 AM</div>`)[0];
+            popup_9a1df5340b08babdd260e0ad2d30439e.setContent(html_22a5157892ca274fd0badfcd6fdd3d17);
+        
+
+        circle_marker_8242b24f930fd660c33458d915bdea38.bindPopup(popup_9a1df5340b08babdd260e0ad2d30439e)
+        ;
+
+        
+    
+    
+            var circle_marker_2e3aefc0397bc50f06b5f25a6102fe84 = L.circleMarker(
+                [30.356507658727555, -81.60413800194013],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_8d3d6e39f600a6b632604c128cf54a8a);
+        
+    
+        var popup_37fd7c30f147c052ff8e5af933c8d570 = L.popup({"maxWidth": 250});
+
+        
+            var html_be35f507e93ee00675630d80c7a30c9e = $(`<div id="html_be35f507e93ee00675630d80c7a30c9e" style="width: 100.0%; height: 100.0%;"><strong>ALL OTHER</strong><br>Address: 3200 JUSTINA TER<br>Date: 2/1/25, 12:00 AM</div>`)[0];
+            popup_37fd7c30f147c052ff8e5af933c8d570.setContent(html_be35f507e93ee00675630d80c7a30c9e);
+        
+
+        circle_marker_2e3aefc0397bc50f06b5f25a6102fe84.bindPopup(popup_37fd7c30f147c052ff8e5af933c8d570)
+        ;
+
+        
+    
+    
+            var circle_marker_af3d2a841e37060892a678dc29a15e63 = L.circleMarker(
+                [30.355685441618295, -81.60013107559845],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_8d3d6e39f600a6b632604c128cf54a8a);
+        
+    
+        var popup_47d6c3e106f03da8d861be79d7bc54b7 = L.popup({"maxWidth": 250});
+
+        
+            var html_e5f1017a605555f86938b436f8c569e8 = $(`<div id="html_e5f1017a605555f86938b436f8c569e8" style="width: 100.0%; height: 100.0%;"><strong>MOTOR VEHICLE THEFT</strong><br>Address: 3100 JUSTINA RD<br>Date: 3/3/25, 7:30 PM</div>`)[0];
+            popup_47d6c3e106f03da8d861be79d7bc54b7.setContent(html_e5f1017a605555f86938b436f8c569e8);
+        
+
+        circle_marker_af3d2a841e37060892a678dc29a15e63.bindPopup(popup_47d6c3e106f03da8d861be79d7bc54b7)
+        ;
+
+        
+    
+    
+            var circle_marker_4062962c0aead9be1ef66a3de7cfb47b = L.circleMarker(
+                [30.355685441618295, -81.60013107559845],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_8d3d6e39f600a6b632604c128cf54a8a);
+        
+    
+        var popup_ecc5b63fc52fcde5d89db6839cd9505e = L.popup({"maxWidth": 250});
+
+        
+            var html_e1e07b17fc45c9dc08b9bfeeb12d6d3d = $(`<div id="html_e1e07b17fc45c9dc08b9bfeeb12d6d3d" style="width: 100.0%; height: 100.0%;"><strong>ALL OTHER</strong><br>Address: 3100 JUSTINA RD<br>Date: 3/3/25, 7:30 PM</div>`)[0];
+            popup_ecc5b63fc52fcde5d89db6839cd9505e.setContent(html_e1e07b17fc45c9dc08b9bfeeb12d6d3d);
+        
+
+        circle_marker_4062962c0aead9be1ef66a3de7cfb47b.bindPopup(popup_ecc5b63fc52fcde5d89db6839cd9505e)
+        ;
+
+        
+    
+    
+            var circle_marker_784a4288c062570a1a6a58f22cbc1e12 = L.circleMarker(
+                [30.360431518360798, -81.60571335948758],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_8d3d6e39f600a6b632604c128cf54a8a);
+        
+    
+        var popup_39bfe369949b82aa126827ec387c0863 = L.popup({"maxWidth": 250});
+
+        
+            var html_d7c833c7b62fd753ff974d0bf2ec49b5 = $(`<div id="html_d7c833c7b62fd753ff974d0bf2ec49b5" style="width: 100.0%; height: 100.0%;"><strong>DRIVING UNDER THE INFLUENCE</strong><br>Address: 3400 UNIVERSITY BLVD N<br>Date: 3/6/25, 6:22 PM</div>`)[0];
+            popup_39bfe369949b82aa126827ec387c0863.setContent(html_d7c833c7b62fd753ff974d0bf2ec49b5);
+        
+
+        circle_marker_784a4288c062570a1a6a58f22cbc1e12.bindPopup(popup_39bfe369949b82aa126827ec387c0863)
+        ;
+
+        
+    
+    
+            var circle_marker_f3fed41b482d1e434a4c46a62494b6e4 = L.circleMarker(
+                [30.360431518360798, -81.60571335948758],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_8d3d6e39f600a6b632604c128cf54a8a);
+        
+    
+        var popup_084063fde186dda0af17358513e27e14 = L.popup({"maxWidth": 250});
+
+        
+            var html_b99b5374163d1c9776d53b401da5ce90 = $(`<div id="html_b99b5374163d1c9776d53b401da5ce90" style="width: 100.0%; height: 100.0%;"><strong>ALL OTHER</strong><br>Address: 3400 UNIVERSITY BLVD N<br>Date: 3/6/25, 6:22 PM</div>`)[0];
+            popup_084063fde186dda0af17358513e27e14.setContent(html_b99b5374163d1c9776d53b401da5ce90);
+        
+
+        circle_marker_f3fed41b482d1e434a4c46a62494b6e4.bindPopup(popup_084063fde186dda0af17358513e27e14)
+        ;
+
+        
+    
+    
+            var circle_marker_476fc990bcfb437fb777a644c9474451 = L.circleMarker(
+                [30.35667261912219, -81.60233236126957],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_8d3d6e39f600a6b632604c128cf54a8a);
+        
+    
+        var popup_e2425491da9e96a9fcee40b7a1508647 = L.popup({"maxWidth": 250});
+
+        
+            var html_2523815e788ec1429e3e37b61e6806cf = $(`<div id="html_2523815e788ec1429e3e37b61e6806cf" style="width: 100.0%; height: 100.0%;"><strong>THEFT</strong><br>Address: 5700 HOLLY BELL DR<br>Date: 3/2/25, 12:00 PM</div>`)[0];
+            popup_e2425491da9e96a9fcee40b7a1508647.setContent(html_2523815e788ec1429e3e37b61e6806cf);
+        
+
+        circle_marker_476fc990bcfb437fb777a644c9474451.bindPopup(popup_e2425491da9e96a9fcee40b7a1508647)
+        ;
+
+        
+    
+    
+            var circle_marker_d23ec449c8b9392f9b6e1bd11c054ddc = L.circleMarker(
+                [30.353923881123762, -81.59948750456262],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_8d3d6e39f600a6b632604c128cf54a8a);
+        
+    
+        var popup_1f69b28c036aea3c6444e38f0e8f6b44 = L.popup({"maxWidth": 250});
+
+        
+            var html_1bba0e90c5dd00d116e5416088dfb1b4 = $(`<div id="html_1bba0e90c5dd00d116e5416088dfb1b4" style="width: 100.0%; height: 100.0%;"><strong>FRAUD</strong><br>Address: 2900 JUSTINA RD<br>Date: 3/8/25, 11:05 AM</div>`)[0];
+            popup_1f69b28c036aea3c6444e38f0e8f6b44.setContent(html_1bba0e90c5dd00d116e5416088dfb1b4);
+        
+
+        circle_marker_d23ec449c8b9392f9b6e1bd11c054ddc.bindPopup(popup_1f69b28c036aea3c6444e38f0e8f6b44)
+        ;
+
+        
+    
+    
+            var circle_marker_d5fadb1c9fad2d12a3864c5e8423328a = L.circleMarker(
+                [30.356486466013486, -81.59802193012602],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_8d3d6e39f600a6b632604c128cf54a8a);
+        
+    
+        var popup_186d5942582c54b327738d1b29018f33 = L.popup({"maxWidth": 250});
+
+        
+            var html_6c00cf27f9c94132cde110a0278f520a = $(`<div id="html_6c00cf27f9c94132cde110a0278f520a" style="width: 100.0%; height: 100.0%;"><strong>SIMPLE ASSAULT</strong><br>Address: 3100 CESERY BLVD<br>Date: 3/13/25, 2:00 AM</div>`)[0];
+            popup_186d5942582c54b327738d1b29018f33.setContent(html_6c00cf27f9c94132cde110a0278f520a);
+        
+
+        circle_marker_d5fadb1c9fad2d12a3864c5e8423328a.bindPopup(popup_186d5942582c54b327738d1b29018f33)
+        ;
+
+        
+    
+    
+            var circle_marker_a55dab54e318ef57b91d240d6e91e990 = L.circleMarker(
+                [30.35724346319231, -81.60071235745251],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_8d3d6e39f600a6b632604c128cf54a8a);
+        
+    
+        var popup_268dc4411d80891c1b2be63c62bd4f07 = L.popup({"maxWidth": 250});
+
+        
+            var html_9c99d34eeac1b9e7a478ecb5c7e5ec7e = $(`<div id="html_9c99d34eeac1b9e7a478ecb5c7e5ec7e" style="width: 100.0%; height: 100.0%;"><strong>ROBBERY</strong><br>Address: 3200 JUSTINA RD<br>Date: 3/17/25, 9:50 AM</div>`)[0];
+            popup_268dc4411d80891c1b2be63c62bd4f07.setContent(html_9c99d34eeac1b9e7a478ecb5c7e5ec7e);
+        
+
+        circle_marker_a55dab54e318ef57b91d240d6e91e990.bindPopup(popup_268dc4411d80891c1b2be63c62bd4f07)
+        ;
+
+        
+    
+    
+            var circle_marker_402da914ca8b14de266c537a22f5f714 = L.circleMarker(
+                [30.35724346319231, -81.60071235745251],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_8d3d6e39f600a6b632604c128cf54a8a);
+        
+    
+        var popup_5a87c019057506c4b0f1d93812ffc87c = L.popup({"maxWidth": 250});
+
+        
+            var html_c64a29535ccc620addf3975bc34c35e4 = $(`<div id="html_c64a29535ccc620addf3975bc34c35e4" style="width: 100.0%; height: 100.0%;"><strong>DRUGS/NARCOTICS</strong><br>Address: 3200 JUSTINA RD<br>Date: 3/17/25, 9:50 AM</div>`)[0];
+            popup_5a87c019057506c4b0f1d93812ffc87c.setContent(html_c64a29535ccc620addf3975bc34c35e4);
+        
+
+        circle_marker_402da914ca8b14de266c537a22f5f714.bindPopup(popup_5a87c019057506c4b0f1d93812ffc87c)
+        ;
+
+        
+    
+    
+            var circle_marker_1ecd2a4d008f3428b8a4dcb73a3e2665 = L.circleMarker(
+                [30.353923881123762, -81.59948750456262],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_8d3d6e39f600a6b632604c128cf54a8a);
+        
+    
+        var popup_46762b765102095aad6857e87c35d3a7 = L.popup({"maxWidth": 250});
+
+        
+            var html_67ff0e57719bda24a8675d7765a1c417 = $(`<div id="html_67ff0e57719bda24a8675d7765a1c417" style="width: 100.0%; height: 100.0%;"><strong>WEAPONS VIOLATIONS</strong><br>Address: 2900 JUSTINA RD<br>Date: 3/17/25, 10:15 PM</div>`)[0];
+            popup_46762b765102095aad6857e87c35d3a7.setContent(html_67ff0e57719bda24a8675d7765a1c417);
+        
+
+        circle_marker_1ecd2a4d008f3428b8a4dcb73a3e2665.bindPopup(popup_46762b765102095aad6857e87c35d3a7)
+        ;
+
+        
+    
+    
+            var circle_marker_b3b4584436d6f5228a0e3e25eaceb05a = L.circleMarker(
+                [30.356851617230188, -81.60358066917155],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_8d3d6e39f600a6b632604c128cf54a8a);
+        
+    
+        var popup_a0342266c4f53cd9d46d3283509d6298 = L.popup({"maxWidth": 250});
+
+        
+            var html_aa73f28da5c52b450b9b17b1e1298d41 = $(`<div id="html_aa73f28da5c52b450b9b17b1e1298d41" style="width: 100.0%; height: 100.0%;"><strong>SIMPLE ASSAULT</strong><br>Address: 5600 HOLLY BELL DR<br>Date: 3/21/25, 2:06 PM</div>`)[0];
+            popup_a0342266c4f53cd9d46d3283509d6298.setContent(html_aa73f28da5c52b450b9b17b1e1298d41);
+        
+
+        circle_marker_b3b4584436d6f5228a0e3e25eaceb05a.bindPopup(popup_a0342266c4f53cd9d46d3283509d6298)
+        ;
+
+        
+    
+    
+            var circle_marker_5f5ed8787feea047ebef4cd4cfb8bdc4 = L.circleMarker(
+                [30.362550425787504, -81.60378591624766],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_8d3d6e39f600a6b632604c128cf54a8a);
+        
+    
+        var popup_14494453dea45419e29794b2efd28758 = L.popup({"maxWidth": 250});
+
+        
+            var html_116d2b4202fd43e8eefac2a1a8336fe4 = $(`<div id="html_116d2b4202fd43e8eefac2a1a8336fe4" style="width: 100.0%; height: 100.0%;"><strong>BURGLARY</strong><br>Address: 5600 GEORGE CT<br>Date: 3/21/25, 6:26 PM</div>`)[0];
+            popup_14494453dea45419e29794b2efd28758.setContent(html_116d2b4202fd43e8eefac2a1a8336fe4);
+        
+
+        circle_marker_5f5ed8787feea047ebef4cd4cfb8bdc4.bindPopup(popup_14494453dea45419e29794b2efd28758)
+        ;
+
+        
+    
+    
+            var circle_marker_f44c304d7791471bb4228c89b3693adb = L.circleMarker(
+                [30.362550425787504, -81.60378591624766],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_8d3d6e39f600a6b632604c128cf54a8a);
+        
+    
+        var popup_b43791f927c2fc028d13d81d6d713f99 = L.popup({"maxWidth": 250});
+
+        
+            var html_83aa64b522833e55e16d52f078e90c7c = $(`<div id="html_83aa64b522833e55e16d52f078e90c7c" style="width: 100.0%; height: 100.0%;"><strong>FRAUD</strong><br>Address: 5600 GEORGE CT<br>Date: 3/21/25, 6:26 PM</div>`)[0];
+            popup_b43791f927c2fc028d13d81d6d713f99.setContent(html_83aa64b522833e55e16d52f078e90c7c);
+        
+
+        circle_marker_f44c304d7791471bb4228c89b3693adb.bindPopup(popup_b43791f927c2fc028d13d81d6d713f99)
+        ;
+
+        
+    
+    
+            var circle_marker_57ca9d63568998542092fd5d36573d3f = L.circleMarker(
+                [30.362550425787504, -81.60378591624766],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_8d3d6e39f600a6b632604c128cf54a8a);
+        
+    
+        var popup_77fc71a751a3bb77d368c4787554f79e = L.popup({"maxWidth": 250});
+
+        
+            var html_47641c6400e62565cabe746b86d26f27 = $(`<div id="html_47641c6400e62565cabe746b86d26f27" style="width: 100.0%; height: 100.0%;"><strong>DRUGS/NARCOTICS</strong><br>Address: 5600 GEORGE CT<br>Date: 3/21/25, 6:26 PM</div>`)[0];
+            popup_77fc71a751a3bb77d368c4787554f79e.setContent(html_47641c6400e62565cabe746b86d26f27);
+        
+
+        circle_marker_57ca9d63568998542092fd5d36573d3f.bindPopup(popup_77fc71a751a3bb77d368c4787554f79e)
+        ;
+
+        
+    
+    
+            var circle_marker_d37b9a0d7ef27fb73999e7789a79a21a = L.circleMarker(
+                [30.362550425787504, -81.60378591624766],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_8d3d6e39f600a6b632604c128cf54a8a);
+        
+    
+        var popup_010799786fe4634a50b25d62b229e4bb = L.popup({"maxWidth": 250});
+
+        
+            var html_8670364b25a5b5e99a7d9407a4fec402 = $(`<div id="html_8670364b25a5b5e99a7d9407a4fec402" style="width: 100.0%; height: 100.0%;"><strong>ALL OTHER</strong><br>Address: 5600 GEORGE CT<br>Date: 3/21/25, 6:26 PM</div>`)[0];
+            popup_010799786fe4634a50b25d62b229e4bb.setContent(html_8670364b25a5b5e99a7d9407a4fec402);
+        
+
+        circle_marker_d37b9a0d7ef27fb73999e7789a79a21a.bindPopup(popup_010799786fe4634a50b25d62b229e4bb)
+        ;
+
+        
+    
+    
+            var circle_marker_327f0a1ac21c97a16f149964f5193cf3 = L.circleMarker(
+                [30.353923881123762, -81.59948750456262],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_8d3d6e39f600a6b632604c128cf54a8a);
+        
+    
+        var popup_c1793cafb1c962a8517086511bb46452 = L.popup({"maxWidth": 250});
+
+        
+            var html_548fcc21d6fa276d9eeb0b90afcc3476 = $(`<div id="html_548fcc21d6fa276d9eeb0b90afcc3476" style="width: 100.0%; height: 100.0%;"><strong>DRUGS/NARCOTICS</strong><br>Address: 2900 JUSTINA RD<br>Date: 3/24/25, 9:45 PM</div>`)[0];
+            popup_c1793cafb1c962a8517086511bb46452.setContent(html_548fcc21d6fa276d9eeb0b90afcc3476);
+        
+
+        circle_marker_327f0a1ac21c97a16f149964f5193cf3.bindPopup(popup_c1793cafb1c962a8517086511bb46452)
+        ;
+
+        
+    
+    
+            var circle_marker_bb069c7bbc953735bc9ca8e5ba067717 = L.circleMarker(
+                [30.353923881123762, -81.59948750456262],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_8d3d6e39f600a6b632604c128cf54a8a);
+        
+    
+        var popup_80ba015d252cc64579e22794e87d451f = L.popup({"maxWidth": 250});
+
+        
+            var html_655eabfefcf809948391648631971d52 = $(`<div id="html_655eabfefcf809948391648631971d52" style="width: 100.0%; height: 100.0%;"><strong>ALL OTHER</strong><br>Address: 2900 JUSTINA RD<br>Date: 3/24/25, 9:45 PM</div>`)[0];
+            popup_80ba015d252cc64579e22794e87d451f.setContent(html_655eabfefcf809948391648631971d52);
+        
+
+        circle_marker_bb069c7bbc953735bc9ca8e5ba067717.bindPopup(popup_80ba015d252cc64579e22794e87d451f)
+        ;
+
+        
+    
+    
+            var circle_marker_7cb4f75e16bd85135f5ed689da22ba34 = L.circleMarker(
+                [30.35937765550905, -81.60162523442739],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_8d3d6e39f600a6b632604c128cf54a8a);
+        
+    
+        var popup_33e38816c07e04c6a33fe17767aa5add = L.popup({"maxWidth": 250});
+
+        
+            var html_f1167896d55b5b89950e7923b6b240c8 = $(`<div id="html_f1167896d55b5b89950e7923b6b240c8" style="width: 100.0%; height: 100.0%;"><strong>BURGLARY</strong><br>Address: 5700 JUSTINA TER<br>Date: 3/26/25, 9:00 AM</div>`)[0];
+            popup_33e38816c07e04c6a33fe17767aa5add.setContent(html_f1167896d55b5b89950e7923b6b240c8);
+        
+
+        circle_marker_7cb4f75e16bd85135f5ed689da22ba34.bindPopup(popup_33e38816c07e04c6a33fe17767aa5add)
+        ;
+
+        
+    
+    
+            var circle_marker_25fbd82894d527c084bf6bb17f389164 = L.circleMarker(
+                [30.355950553924416, -81.6013347551971],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_8d3d6e39f600a6b632604c128cf54a8a);
+        
+    
+        var popup_9649a3b84c51863a6c919d941546a7f8 = L.popup({"maxWidth": 250});
+
+        
+            var html_1be2c890a8736f0d0e87c596f0228e66 = $(`<div id="html_1be2c890a8736f0d0e87c596f0228e66" style="width: 100.0%; height: 100.0%;"><strong>BURGLARY</strong><br>Address: 3100 TALL PINE LN W<br>Date: 1/21/25, 12:00 AM</div>`)[0];
+            popup_9649a3b84c51863a6c919d941546a7f8.setContent(html_1be2c890a8736f0d0e87c596f0228e66);
+        
+
+        circle_marker_25fbd82894d527c084bf6bb17f389164.bindPopup(popup_9649a3b84c51863a6c919d941546a7f8)
+        ;
+
+        
+    
+    
+            var circle_marker_88fcc37f3b33a5cdae09078eb224224f = L.circleMarker(
+                [30.35667261912219, -81.60233236126957],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_8d3d6e39f600a6b632604c128cf54a8a);
+        
+    
+        var popup_5326607060e1305993bbd50d78ec4933 = L.popup({"maxWidth": 250});
+
+        
+            var html_e379eb958e115d032c26a97c21097d81 = $(`<div id="html_e379eb958e115d032c26a97c21097d81" style="width: 100.0%; height: 100.0%;"><strong>BURGLARY</strong><br>Address: 5700 HOLLY BELL DR<br>Date: 3/28/25, 6:00 PM</div>`)[0];
+            popup_5326607060e1305993bbd50d78ec4933.setContent(html_e379eb958e115d032c26a97c21097d81);
+        
+
+        circle_marker_88fcc37f3b33a5cdae09078eb224224f.bindPopup(popup_5326607060e1305993bbd50d78ec4933)
+        ;
+
+        
+    
+    
+            var circle_marker_60b5ec497399db0e4b3de8054c8af662 = L.circleMarker(
+                [30.364834574979117, -81.60296361640289],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_8d3d6e39f600a6b632604c128cf54a8a);
+        
+    
+        var popup_602ce73cf7b0c25a9cd06292cd3d65f7 = L.popup({"maxWidth": 250});
+
+        
+            var html_562a4973778d4f99295f8c3da6833332 = $(`<div id="html_562a4973778d4f99295f8c3da6833332" style="width: 100.0%; height: 100.0%;"><strong>THEFT</strong><br>Address: 5700 FT CAROLINE RD<br>Date: 3/30/25, 1:55 PM</div>`)[0];
+            popup_602ce73cf7b0c25a9cd06292cd3d65f7.setContent(html_562a4973778d4f99295f8c3da6833332);
+        
+
+        circle_marker_60b5ec497399db0e4b3de8054c8af662.bindPopup(popup_602ce73cf7b0c25a9cd06292cd3d65f7)
+        ;
+
+        
+    
+    
+            var circle_marker_32b42f833e15e66e9446bf48886f0b2c = L.circleMarker(
+                [30.364834574979117, -81.60296361640289],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_8d3d6e39f600a6b632604c128cf54a8a);
+        
+    
+        var popup_8ca4016a424a9d6a8818bcbc55232dad = L.popup({"maxWidth": 250});
+
+        
+            var html_3e8658160a9d52a5fdbb5f7fc3313616 = $(`<div id="html_3e8658160a9d52a5fdbb5f7fc3313616" style="width: 100.0%; height: 100.0%;"><strong>ROBBERY</strong><br>Address: 5700 FT CAROLINE RD<br>Date: 3/31/25, 10:03 AM</div>`)[0];
+            popup_8ca4016a424a9d6a8818bcbc55232dad.setContent(html_3e8658160a9d52a5fdbb5f7fc3313616);
+        
+
+        circle_marker_32b42f833e15e66e9446bf48886f0b2c.bindPopup(popup_8ca4016a424a9d6a8818bcbc55232dad)
+        ;
+
+        
+    
+    
+            var circle_marker_ca05c7c307ad1711f82e2edff0f94171 = L.circleMarker(
+                [30.353923881123762, -81.59948750456262],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_8d3d6e39f600a6b632604c128cf54a8a);
+        
+    
+        var popup_6da667120d497dd14f9e088f449cf7dd = L.popup({"maxWidth": 250});
+
+        
+            var html_cc754f16be05e2d090c7a5729b2149eb = $(`<div id="html_cc754f16be05e2d090c7a5729b2149eb" style="width: 100.0%; height: 100.0%;"><strong>THEFT</strong><br>Address: 2900 JUSTINA RD<br>Date: 3/31/25, 4:00 PM</div>`)[0];
+            popup_6da667120d497dd14f9e088f449cf7dd.setContent(html_cc754f16be05e2d090c7a5729b2149eb);
+        
+
+        circle_marker_ca05c7c307ad1711f82e2edff0f94171.bindPopup(popup_6da667120d497dd14f9e088f449cf7dd)
+        ;
+
+        
+    
+    
+            var circle_marker_1bc5a1dc461082d56467857bf9a18955 = L.circleMarker(
+                [30.35724346319231, -81.60071235745251],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_8d3d6e39f600a6b632604c128cf54a8a);
+        
+    
+        var popup_bc18ad4ed512e5ee14f4e704c5e28fa3 = L.popup({"maxWidth": 250});
+
+        
+            var html_ec667c9042c82254024cf06bb7dc13cb = $(`<div id="html_ec667c9042c82254024cf06bb7dc13cb" style="width: 100.0%; height: 100.0%;"><strong>ROBBERY</strong><br>Address: 3200 JUSTINA RD<br>Date: 3/31/25, 4:00 PM</div>`)[0];
+            popup_bc18ad4ed512e5ee14f4e704c5e28fa3.setContent(html_ec667c9042c82254024cf06bb7dc13cb);
+        
+
+        circle_marker_1bc5a1dc461082d56467857bf9a18955.bindPopup(popup_bc18ad4ed512e5ee14f4e704c5e28fa3)
+        ;
+
+        
+    
+    
+            var rectangle_4b468365b6133beecd60c04c56d83e21 = L.rectangle(
+                [[30.3532, -81.6071], [30.3638, -81.5968]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_c8b9e7b349d9d4eb6a762f93fbfc2d76);
+        
+</script>
+</html>
